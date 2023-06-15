@@ -26,7 +26,7 @@
           storageBucket: "blog-3a194.appspot.com",
           messagingSenderId: "408317893326",
           appId: "1:408317893326:web:47269223e7148ce3840e9f",
-          measurementId: "G-JH894P5RQS"
+          measurementId: "G-JH894 P5RQS"
         };
       
         // Initialize Firebase
@@ -34,13 +34,31 @@
         const analytics = getAnalytics(app);
       </script>
     <h1>Buongiorno</h1>
-    <section id="whenSignedOut"> 
-      <button id="signInBtn"> Sign in with google</button>
-      </section>
-      
-      <section id="whenSignedIn" hidden="true"> 
+    <section id="whenSignedOut">
+
+      <button id="signInBtn" class="btn btn-primary">Sign in with Google</button>
+  
+    </section>
+  
+    <section id="whenSignedIn" hidden="true">
+  
       <div id="userDetails"></div>
-      <button id="signOutBtn"> Sign out</button>
-      </section>
+  
+      <button id="signOutBtn" class="btn btn-primary">Sign Out</button>
+  
+    </section>
+  
+    <hr>
+  
+    <section>
+  
+  
+      <ul id="thingsList">
+  
+      </ul>
+  
+      <button id="createThing" class="btn btn-success">Create Random Thing</button>
+  
+    </section>
 </body>
 </html>
