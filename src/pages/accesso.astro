@@ -1,11 +1,7 @@
 ---
-
 ---
-
 <html lang="en">
- 
-
-  <head>
+<head>
     <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8" />
@@ -13,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Contattaci</title>
+    <title>Accesso</title>
   </head>
   
   <body>
@@ -70,67 +66,90 @@
             </div>
           </div>
           <div class="flex items-center">
-            <a href="accesso.html" class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs">Log-in</a>
+            <a href="accesso.astro" class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs">Log-in</a>
             <a href="registrazione.html" class="bg-blue-600 hover:bg-blue-800 text-white font-semibold my-3 py-2 px-4 rounded sm:text-xs">Sign-in</a>
           </div>
         </div>
       </div>
     </nav>
-    
     <div class="min-h-screen flex flex-col justify-center items-center bg-gray-800 py-12">
-      <div class="md:w-3/4 lg:w-1/3 bg-gray-500 rounded-lg p-6 md: mb-60">
-        <div class="border border-blue-500 bg-gray-800 rounded-lg p-4 mb-4">
-          <h2 class="text-blue-500 text-2xl my-3 text-center">CONTATTACI</h2>
+        <div class="md:w-3/4 lg:w-1/3 bg-gray-500 rounded-lg p-6 md: mb-60">
+            <div class="border border-blue-500 bg-gray-800 rounded-lg p-4 mb-4">
+                <h2 class="text-blue-500 text-2xl my-3 text-center">ACCEDI</h2>
+            </div>
+
+            <div class="mb-4">
+                <label aria-placeholder="Insersci e-mail o Username..." class="block text-white">Indirizzo e-mail o
+                    Username:</label>
+                <input type="email"
+                    class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full" />
+                </div>
+
+
+            <div class="mb-4">
+                <label aria-placeholder="Insersci password..." class="block text-white">Password:</label>
+                <input type="password"
+                    class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full" />
+            </div>
+
+
+            <button class="bg-blue-700 text-white py-2 px-4 rounded-lg mb-4 w-full">Continua</button>
+
+            <p class="mt-2 text-white text-center">
+                <a href="https://www.google.com/" class="text-center text-blue-700 font-bold  ">Hai dimenticato la
+                    password?</a>
+                <br>
+                Non hai un account?
+                <a href="registrazione.html " class="text-blue-700 font-bold w-full "> Registrati!</a>
+            </p>
+            <div class="relative flex items-center justify-center mt-5">
+                <div class="h-px bg-gray-300 w-full"></div>
+                <span class="mx-2 text-gray-800">OPPURE</span>
+                <div class="h-px bg-gray-300 w-full"></div>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <button class="border border-white rounded-lg px-6 py-2 flex items-center my-4 w-full">
+                    <i class="fab fa-google text-white mr-2 text-2xl"></i>
+                    <span class="text-white">Accedi con Google</span>
+                </button>
+                <button class="border border-white rounded-lg px-6 py-2 flex items-center mb-4 w-full">
+                    <i class="fab fa-apple text-black mr-2 text-2xl"></i>
+                    <span class="text-white">Accedi con Apple</span>
+                </button>
+            </div>
+
+
         </div>
-  
-        <div class="mb-4">
-          <label class="block text-white">Nome:</label>
-          <input type="email" placeholder="Inserisci nome..."
-            class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full" />
-        </div>
-  
-        <div class="mb-4">
-          <label class="block text-white">E-mail:</label>
-          <input type="password" placeholder="Inserisci e-mail..."
-            class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full" />
-        </div>
-  
-        <div class="mb-4">
-          <label class="block text-white">Messaggio:</label>
-          <textarea placeholder="Inserisci messaggio..."
-            class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full h-44"></textarea>
-        </div>
-  
-        <button class="bg-blue-700 text-white py-2 px-4 rounded-lg my-5 w-full">Invia</button>
-      </div>
     </div>
-  
+    </div>
     <script>
-      const menuButton = document.querySelector('.menu-btn');
-      const mobileMenu = document.querySelector('#mobile-menu');
-      const submenuButtons = document.querySelectorAll('.submenu-btn');
-      const submenus = document.querySelectorAll('.submenu');
-    
-      menuButton.addEventListener('click', function() {
-        mobileMenu.classList.toggle('hidden');
-      });
-    
-      submenuButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-          const submenu = this.nextElementSibling;
-          submenu.classList.toggle('hidden');
+        const menuButton = document.querySelector('.menu-btn');
+        const mobileMenu = document.querySelector('#mobile-menu');
+        const submenuButtons = document.querySelectorAll('.submenu-btn');
+        const submenus = document.querySelectorAll('.submenu');
+      
+        menuButton.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
         });
-      });
-    
-      document.addEventListener('click', function(event) {
-        const target = event.target;
-        const isMobileMenu = target.closest('#mobile-menu');
-        const isMenuButton = target.closest('.menu-btn');
-    
-        if (!isMobileMenu && !isMenuButton) {
-          mobileMenu.classList.add('hidden');
-        }
-      });
-    </script>
-  </body>
-  </html>
+      
+        submenuButtons.forEach(function(button) {
+          button.addEventListener('click', function() {
+            const submenu = this.nextElementSibling;
+            submenu.classList.toggle('hidden');
+          });
+        });
+      
+        document.addEventListener('click', function(event) {
+          const target = event.target;
+          const isMobileMenu = target.closest('#mobile-menu');
+          const isMenuButton = target.closest('.menu-btn');
+      
+          if (!isMobileMenu && !isMenuButton) {
+            mobileMenu.classList.add('hidden');
+          }
+        });
+      </script>
+</body>
+
+</html>
