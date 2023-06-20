@@ -1,7 +1,8 @@
 import type { ServiceAccount } from "firebase-admin";
 import { initializeApp, cert } from "firebase-admin/app";
+import Account from "./blog.json";
 
-const serviceAccount = {
+/* const serviceAccount = {
   type: "service_account",
   project_id: "blog-3a194",
   private_key_id: "5eca3fb601631915ca27871ecc5398067713ed4f",
@@ -13,7 +14,7 @@ const serviceAccount = {
   auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
   client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fmckf%40blog-3a194.iam.gserviceaccount.com",
 };
-
+ */
 export const app = initializeApp({
-  credential: cert(serviceAccount as ServiceAccount),
+  credential: cert(Account as ServiceAccount),
 });
