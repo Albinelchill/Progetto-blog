@@ -1,0 +1,119 @@
+---
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Astro</title>
+    </head>
+    <body class="sm:w-full lg:w-full">
+        <div class="flex justify-center items-center bg-gray-800 sm:w-full md:w-full lg:w-full">
+            <a href="index.html">
+                <img
+                    src="logo.jpeg"
+                    alt="logo del blog"
+                    class="h-40 w-56 my-6"
+                />
+            </a>
+        </div>
+        <nav class="bg-gray-400 w-full">
+            <div class="container mx-auto flex px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <a href="index.html" class="ml-6 text-gray-900 hover:text-white font-semibold lg:text-lg sm:text-xs">HOME</a>
+                        <a href="news.html" class="ml-6 text-gray-900 hover:text-white font-semibold lg:text-lg sm:text-xs">NEWS</a>
+                        <a href="contattaci.html" class="ml-6 text-gray-900 hover:text-white font-semibold lg:text-lg sm:text-xs">CONTATTACI</a>
+                        <a href="about.html" class="ml-6 text-gray-900 hover:text-white font-semibold lg:text-lg sm:text-xs">ABOUT</a>
+                    </div>
+                    <div class="flex items-center">
+                        <a href="accesso.html" class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold py-2 px-4 rounded">Log-in</a>
+                        <a href="registazione.html" class="bg-blue-600 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded">Sign-in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div
+            class="flex justify-center items-center sm:w-full md:w-full bg-gray-800"
+        >
+            <div
+                class=" lg:w-1/3  bg-gray-500 rounded-lg p-6 mt-12 sm:w-full"
+            >
+                <div
+                    class="border border-blue-500 bg-gray-800 rounded-lg p-4 mb-4"
+                >
+                    <h2 class="text-blue-500 text-2xl my-3 text-center">
+                        REGISTRAZIONE
+                    </h2>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-white">Email:</label>
+                    <input
+                        type="email"
+                        class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full"
+                    />
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-white">Nome utente:</label>
+                    <input
+                        type="text"
+                        class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full"
+                    />
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-white">Password:</label>
+                    <input
+                        placeholder="Inserisci password..."
+                        type="password"
+                        class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full"
+                    />
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-white">Conferma password:</label>
+                    <input
+                        type="password"
+                        class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full"
+                    />
+                </div>
+
+                <button
+                    class="bg-blue-700 text-white py-2 px-4 rounded-lg mb-4 w-full"
+                    >Continua</button
+                >
+
+                <p class="text-white text-center">
+                    Hai già un account?
+                    <a href="accesso.html" class="text-blue-700 font-bold"
+                        >Accedi</a
+                    >
+                </p>
+                <div class="relative flex items-center justify-center mt-5">
+                    <div class="h-px bg-gray-300 w-full"></div>
+                    <span class="mx-2 text-gray-800">OPPURE</span>
+                    <div class="h-px bg-gray-300 w-full"></div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <button
+                        class="border border-white rounded-lg px-6 py-2 flex items-center my-4 w-full"
+                    >
+                        <i class="fab fa-google text-white mr-2 text-2xl"></i>
+                        <span class="text-white">Accedi con Google</span>
+                    </button>
+                    <button
+                        class="border border-white rounded-lg px-6 py-2 flex items-center mb-4 w-full"
+                    >
+                        <i class="fab fa-apple text-black mr-2 text-2xl"></i>
+                        <span class="text-white">Accedi con Apple</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
