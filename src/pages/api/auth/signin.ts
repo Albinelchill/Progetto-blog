@@ -36,20 +36,4 @@ export const get: APIRoute = async ({ request, cookies, redirect }) => {
 
   return redirect("/dashboard");
 };
-console.log(firebase);
-var usersRef = firebase.firestore().collection("users");
-
-// Esempio: Aggiungi un documento alla collezione "users"
-var newUser = {
-  password: "ciao",
-  email: "mario@email.com"
-};
-
-usersRef.add(newUser)
-  .then(function(docRef) {
-    console.log("Documento aggiunto con ID: ", docRef.id);
-  })
-  .catch(function(error) {
-    console.error("Errore durante l'aggiunta del documento: ", error);
-  });
 
