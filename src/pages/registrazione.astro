@@ -168,12 +168,69 @@ if (sessionCookie) {
                     <div class="h-px bg-gray-300 w-full"></div>
                 </div>
                 <div class="flex flex-col items-center">
-                    <button
+                    <button id="google"
                     class="border border-white rounded-lg px-6 py-2 flex items-center my-4 w-full"
                     >
                         <i class="fab fa-google text-white mr-2 text-2xl"></i>
                         <span class="text-white">Accedi con Google</span>
                     </button>
+                    <form action="/api/auth/signin" method="post">
+                  <script>
+                    import {
+                      getAuth,
+                      inMemoryPersistence,
+                      signInWithEmailAndPassword,
+                      GoogleAuthProvider,
+                      signInWithPopup,
+                    } from "firebase/auth";
+                    import { app } from "../firebase/client";
+                  
+                    const auth = getAuth(app);
+                    auth.setPersistence(inMemoryPersistence);
+                  
+                    const form = document.querySelector("form") as HTMLFormElement;
+                    form.addEventListener("submit", async (e) => {
+                      e.preventDefault();
+                      const formData = new FormData(form);
+                      const email = formData.get("email")?.toString();
+                      const password = formData.get("password")?.toString();
+                  
+                      if (!email || !password) {
+                        return;
+                      }
+                      const userCredential = await signInWithEmailAndPassword(
+                        auth,
+                        email,
+                        password
+                      );
+                      const idToken = await userCredential.user.getIdToken();
+                      const response = await fetch("/api/auth/signin", {
+                        headers: {
+                          Authorization: `Bearer ${idToken}`,
+                        },
+                      });
+                  
+                      if (response.redirected) {
+                        window.location.assign(response.url);
+                      }
+                    });
+                  
+                    const googleSignin = document.querySelector("#google") as HTMLButtonElement;
+                    googleSignin.addEventListener("click", async () => {
+                      const provider = new GoogleAuthProvider();
+                      const userCredential = await signInWithPopup(auth, provider);
+                      const idToken = await userCredential.user.getIdToken();
+                      const res = await fetch("/api/auth/signin", {
+                        headers: {
+                          Authorization: `Bearer ${idToken}`,
+                        },
+                      });
+                  
+                      if (res.redirected) {
+                        window.location.assign(res.url);
+                      }
+                    });
+                  </script>
                     <button
                         class="border border-white rounded-lg px-6 py-2 flex items-center mb-4 w-full"
                     >
