@@ -213,9 +213,14 @@
           ></textarea>
         </div>
 
-        <button class="bg-blue-700 text-white py-2 px-4 rounded-lg my-5 w-full"
+        <button id="mioBottone" class="bg-blue-700 text-white py-2 px-4 rounded-lg my-5 w-full"
           >Invia</button
         >
+            <script>
+              document.getElementById("mioBottone").addEventListener("click", function() {
+                window.location.href = "index.html";
+              });
+            </script>
       </div>
     </div>
 

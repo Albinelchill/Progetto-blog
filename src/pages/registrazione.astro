@@ -145,16 +145,22 @@ if (sessionCookie) {
                     />
                 </div>
 
-                <button
+                <button id="mioBottone"
                     class="bg-blue-700 text-white py-2 px-4 rounded-lg mb-4 w-full"
                     >Continua</button
                 >
+            <script>
+              document.getElementById("mioBottone").addEventListener("click", function() {
+                window.location.href = "index.html";
+              });
+            </script>
 
                 <p class="text-white text-center">
                     Hai già un account?
                     <a href="accesso.html" class="text-blue-700 font-bold"
                         >Accedi</a
                     >
+                    
                 </p>
                 <div class="relative flex items-center justify-center mt-5">
                     <div class="h-px bg-gray-300 w-full"></div>
