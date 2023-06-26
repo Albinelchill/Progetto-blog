@@ -208,11 +208,10 @@
 			  <!-- Search Bar -->
 			  <div class="flex justify-end mb-8">
 				<div class="w-full sm:w-auto mb-4 sm:mb-0">
-				  <input type="text" placeholder="Cerca..." class="border border-gray-300 rounded px-4 py-2 w-full">
+				  <input type="text" placeholder="Cerca..." class="border border-gray-300 rounded px-4 py-2 w-full" id="search-input">
 				</div>
 			  </div>
 		  
-			  <!-- Filters (Mobile) -->
 			  <div class="sm:hidden mb-4">
 				<div class="relative">
 				  <select class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
@@ -231,7 +230,7 @@
 		  
 			  <div class="flex">
 				<!-- Filters (Desktop) -->
-				<div class="hidden sm:block w-full sm:w-64 bg-white p-4 rounded mr-8">
+				<div class="hidden sm:block w-full sm:w-64 border border-blue-500 bg-gray-400 p-4 rounded mr-8">
 				  <h2 class="text-xl font-semibold mb-4">Filtri</h2>
 				  <div class="flex items-center mb-2">
 					<input type="checkbox" id="topic-filter" class="mr-2">
@@ -248,20 +247,45 @@
 				</div>
 		  
 				<div class="w-full">
-				  <div class="mt-8 bg-white rounded-lg overflow-hidden shadow-lg">
-					<img src="article-preview.jpg" alt="Preview immagine articolo" class="w-full">
-					<div class="px-6 py-4">
-					  <p class="text-gray-700 text-base">Negli ultimi anni, il mondo del calcio ha vissuto una vera e propria rivoluzione grazie all'introduzione di nuove strategie e tecnologie che stanno trasformando il modo in cui il gioco viene giocato e gestito.</p>
-					</div>
-					<div class="px-6 py-4 flex justify-between items-center">
-					  <a href="#" class="text-gray-600 font-semibold">SCOPRI DI PIÙ</a>
-					  <div class="flex items-center">
-						<i class="fas fa-thumbs-up text-gray-500 mr-2"></i>
-						<span class="text-gray-500">42</span>
+					<div class="mt-auto border border-blue-500 bg-gray-400 rounded-lg overflow-hidden shadow-lg ">
+						<div class="flex flex-col justify-center items-center">
+							<div class="border border-blue-500 bg-gray-800 rounded-lg p-4 my-4 ">
+								<h1 class="text-center text-4xl font-bold text-blue-600">Il calcio con la F</h1>
+							</div>
+						</div>
+
+					  <img src="pallone.jpg" alt="Preview immagine articolo" class="w-1/4 mx-auto">
+					  <div class="border border-blue-500 bg-gray-800 rounded-lg p-4 my-4 mx-2" id="article-content">
+						<p class="text-gray-200 text-base">Negli ultimi anni, il mondo del calcio ha vissuto una vera e propria rivoluzione grazie all'introduzione di nuove strategie e tecnologie che stanno trasformando il modo in cui il gioco viene giocato e gestito.</p>
+						<div class="px-6 py-4 flex justify-between items-center">
+						  <a href="#" class="text-blue-600 font-semibold ">SCOPRI DI PIÙ</a>
+						  <div class="flex items-center">
+							<i class="fas fa-thumbs-up text-gray-500 mr-2"></i>
+							<span class="text-gray-500">42</span>
+						  </div>
+					  </div>
 					  </div>
 					</div>
 				  </div>
-				</div>
+				  
+				  <script>
+					const searchInput = document.getElementById('search-input');
+					const articleContent = document.getElementById('article-content');
+				  
+					searchInput.addEventListener('input', function() {
+					  const searchText = this.value.toLowerCase();
+					  const articleText = articleContent.innerText;
+				  
+					  if (searchText) {
+						const regex = new RegExp(searchText, 'gi');
+						const highlightedText = articleText.replace(regex, (match) => `<span class="bg-yellow-500">${match}</span>`);
+						articleContent.innerHTML = highlightedText;
+					  } else {
+						articleContent.innerHTML = articleText;
+					  }
+					});
+				  </script>
+				  
 			  </div>
 			</div>
 		  </div>
