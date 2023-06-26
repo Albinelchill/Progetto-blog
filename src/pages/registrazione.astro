@@ -29,9 +29,10 @@ if (sessionCookie) {
     <div
     class="flex justify-center items-center bg-gray-800 sm:w-full md:h-full md:w-full lg:w-full"
   >
-    <a href="index.html">
-      <img src="logo.jpeg" alt="logo del blog" class="h-40 w-56 my-6" />
-    </a>
+  <a href="index.html">
+    <img src="logo.jpeg" alt="logo del blog" class="h-40 w-64 rounded-md my-6" />
+  </a>
+  
   </div>
 
   <div
@@ -47,39 +48,21 @@ if (sessionCookie) {
       <i class="fab fa-twitter text-white text-lg"></i>
     </a>
   </div>
-    <nav class="bg-gray-300 sm:w-full lg:w-full">
-      <div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
-        <div class="flex items-center justify-between">
-          <div class="flex-auto items-center sm:mx-auto sm:w-fit">
-            <div class="relative inline-block sm:hidden">
-              <button class="menu-btn text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">
-                Menu
-                <svg class="w-4 h-4 inline-block ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M6 9l6 6 6-6" />
-                </svg>
-              </button>
-              <div class="absolute hidden text-gray-900 bg-white mt-2 py-2 w-32 rounded-lg shadow-lg z-10" id="mobile-menu">
-                <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
-                <div class="group relative inline-block">
-                  <button class="submenu-btn block px-4 py-2 hover:bg-gray-100">News
-                    <svg class="w-4 h-4 inline-block ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M6 9l6 6 6-6" />
-                    </svg>
-                  </button>
-                  <div class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu" id="news-submenu">
-                    <a href="sport.html" class="block px-4 py-2 hover:bg-gray-100">Sport</a>
-                    <a href="musica.html" class="block px-4 py-2 hover:bg-gray-100">Musica</a>
-                    <a href="cinema.html" class="block px-4 py-2 hover:bg-gray-100">Cinema</a>
-                  </div>
-                </div>
-                <a href="contattaci.html" class="block px-4 py-2 hover:bg-gray-100">Contattaci</a>
-                <a href="about.html" class="block px-4 py-2 hover:bg-gray-100">About</a>
-              </div>
-            </div>
-            <div class="hidden sm:flex">
-              <a href="index.html" class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">Home</a>
+  <nav class="bg-gray-300 sm:w-full lg:w-full">
+    <div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
+      <div class="flex items-center justify-between">
+        <div class="flex-auto items-center sm:mx-auto sm:w-fit">
+          <div class="relative inline-block sm:hidden">
+            <button class="menu-btn text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">
+              Menu
+              <svg class="w-4 h-4 inline-block ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div class="absolute hidden text-gray-900 bg-white mt-2 py-2 w-32 rounded-lg shadow-lg z-10" id="mobile-menu">
+              <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
               <div class="group relative inline-block">
-                <button class="submenu-btn mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">News
+                <button class="submenu-btn block px-4 py-2 hover:bg-gray-100">News
                   <svg class="w-4 h-4 inline-block ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M6 9l6 6 6-6" />
                   </svg>
@@ -90,46 +73,66 @@ if (sessionCookie) {
                   <a href="cinema.html" class="block px-4 py-2 hover:bg-gray-100">Cinema</a>
                 </div>
               </div>
-              <a href="contattaci.html" class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">Contattaci</a>
-              <a href="about.html" class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">About</a>
+              <a href="contattaci.html" class="block px-4 py-2 hover:bg-gray-100">Contattaci</a>
+              <a href="about.html" class="block px-4 py-2 hover:bg-gray-100">About</a>
             </div>
           </div>
-          <div class="flex items-center">
-            <a href="accesso.html" class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs">Log-in</a>
-            <a href="registrazione.html" class="bg-blue-600 hover:bg-blue-800 text-white font-semibold my-3 py-2 px-4 rounded sm:text-xs">Sign-in</a>
+          <div class="hidden sm:flex">
+            <a href="index.html" class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">Home</a>
+            <div class="group relative inline-block">
+              <button class="submenu-btn mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">News
+                <svg class="w-4 h-4 inline-block ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </button>
+              <div class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu" id="news-submenu">
+                <a href="sport.html" class="block px-4 py-2 hover:bg-gray-100">Sport</a>
+                <a href="musica.html" class="block px-4 py-2 hover:bg-gray-100">Musica</a>
+                <a href="cinema.html" class="block px-4 py-2 hover:bg-gray-100">Cinema</a>
+              </div>
+            </div>
+            <a href="contattaci.html" class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">Contattaci</a>
+            <a href="about.html" class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">About</a>
           </div>
         </div>
+        <div class="flex items-center">
+          <a href="accesso.html" class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs">Log-in</a>
+          <a href="registrazione.html" class="bg-blue-600 hover:bg-blue-800 text-white font-semibold my-3 py-2 px-4 rounded sm:text-xs bg-gradient-to-r from-blue-500 to-blue-700">Sign-in</a>
+        </div>
       </div>
-    </nav>
+    </div>
+  </nav>
         
     <div class="min-h-screen flex flex-col justify-center items-center bg-gray-800 py-12">
-        <div class="md:w-3/4 lg:w-1/3 bg-gray-500 rounded-lg p-6 md: mb-60">
+        <div class="md:w-3/4 lg:w-1/3 bg-gray-300 rounded-lg p-6 md: mb-60">
                 <div
-                    class="border border-blue-500 bg-gray-800 rounded-lg p-4 mb-4"
+                    class="p-4 mb-4"
                 >
-                    <h2 class="text-blue-500 text-2xl my-3 text-center">
+                    <h2 class="text-blue-700 text-4xl font-bold my-3 text-center">
                         REGISTRAZIONE
                     </h2>
                 </div>
 
                 <div class="mb-4">
-                    <label class="block text-white">Email:</label>
+                    <label class="block font-bold">Email:</label>
                     <input
+                        placeholder="Inserisci E-mail..."
                         type="email"
                         class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full"
                     />
                 </div>
 
                 <div class="mb-4">
-                    <label class="block text-white">Nome utente:</label>
+                    <label class="block font-bold">Nome utente:</label>
                     <input
+                        placeholder="Inserisci Nome Utente..."
                         type="text"
                         class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full"
                     />
                 </div>
 
                 <div class="mb-4">
-                    <label class="block text-white">Password:</label>
+                    <label class="block font-bold">Password:</label>
                     <input
                         placeholder="Inserisci password..."
                         type="password"
@@ -138,15 +141,16 @@ if (sessionCookie) {
                 </div>
 
                 <div class="mb-6">
-                    <label class="block text-white">Conferma password:</label>
+                    <label class="block font-bold">Conferma password:</label>
                     <input
+                        placeholder="Conferma password..."
                         type="password"
                         class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full"
                     />
                 </div>
 
                 <button id="mioBottone"
-                    class="bg-blue-700 text-white py-2 px-4 rounded-lg mb-4 w-full"
+                    class="bg-blue-700 text-white py-2 px-4 rounded-lg mb-4 w-full bg-gradient-to-r from-blue-500 to-blue-700"
                     >Continua</button
                 >
             <script>
@@ -156,23 +160,23 @@ if (sessionCookie) {
             </script>
 
                 <p class="text-white text-center">
-                    Hai già un account?
+                    <span class="text-black font-bold">Hai già un account?</span>
                     <a href="accesso.html" class="text-blue-700 font-bold"
                         >Accedi</a
                     >
                     
                 </p>
                 <div class="relative flex items-center justify-center mt-5">
-                    <div class="h-px bg-gray-300 w-full"></div>
-                    <span class="mx-2 text-gray-800">OPPURE</span>
-                    <div class="h-px bg-gray-300 w-full"></div>
+                    <div class="h-px bg-gray-800 w-full"></div>
+                    <span class="mx-2 font-bold">OPPURE</span>
+                    <div class="h-px bg-gray-800 w-full"></div>
                 </div>
                 <div class="flex flex-col items-center">
                     <button id="google"
-                    class="border border-white rounded-lg px-6 py-2 flex items-center my-4 w-full"
+                    class="border border-black rounded-lg px-6 py-2 flex items-center my-4 w-full"
                     >
-                        <i class="fab fa-google text-white mr-2 text-2xl"></i>
-                        <span class="text-white">Accedi con Google</span>
+                        <i class="fab fa-google text-blue-700 mr-2 text-2xl"></i>
+                        <span class="text-black font-bold">Accedi con Google</span>
                     </button>
                     <form action="/api/auth/signin" method="post">
                   <script>
