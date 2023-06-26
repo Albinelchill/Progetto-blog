@@ -51,7 +51,7 @@
 				<i class="fab fa-twitter text-white text-lg"></i>
 			</a>
 		</div>
-		<nav class="bg-gray-400 sm:w-full lg:w-full">
+		<nav class="bg-gray-300 sm:w-full lg:w-full">
 			<div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
 				<div class="flex items-center justify-between">
 					<div class="flex-auto items-center sm:mx-auto sm:w-fit">
@@ -208,7 +208,7 @@
 			  <!-- Search Bar -->
 			  <div class="flex justify-end mb-8">
 				<div class="w-full sm:w-auto mb-4 sm:mb-">
-				  <input type="text" placeholder="Cerca..." class="border border-blue-700 bg-gray-900 rounded px-4 py-2 w-full" id="search-input">
+				  <input type="text" placeholder="Cerca..." class="border border-blue-700 bg-gray-900 rounded px-4 py-2 w-full text-white" id="search-input">
 				</div>
 			  </div>
 		  
@@ -230,7 +230,7 @@
 		  
 			  <div class="flex">
 				<!-- Filters (Desktop) -->
-				<div class="hidden sm:block w-full sm:w-64 border border-blue-500 bg-gray-400 p-4 rounded mr-8">
+				<div class=" bg-gray-300 p-4 rounded mr-8">
 				  <h2 class="text-xl font-semibold mb-4">Filtri</h2>
 				  <div class="flex items-center mb-2">
 					<input type="checkbox" id="topic-filter" class="mr-2">
@@ -246,27 +246,34 @@
 				  </div>
 				</div>
 		  
-				<div class="w-full">
-					<div class="mt-auto border border-blue-500 bg-gray-400 rounded-lg overflow-hidden shadow-lg">
-					  <div class="flex flex-col justify-center items-center">
-						<div class="border border-blue-500 bg-gray-800 rounded-lg p-4 my-4">
-						  <h1 class="text-center text-4xl font-bold text-blue-600">Il calcio con la F</h1>
-						</div>
-					  </div>
+				<article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+					<img
+					  alt="Office"
+					  src="pallone.jpg"
+					  class="h-56 w-full object-cover"
+					/>
 				  
-					  <img src="pallone.jpg" alt="Preview immagine articolo" class="w-1/4 mx-auto">
-					  <div class="border border-blue-500 bg-gray-800 rounded-lg p-4 my-4 mx-2" id="article-content">
-						<p class="text-gray-200 text-base">Negli ultimi anni, il mondo del calcio ha vissuto una vera e propria rivoluzione grazie all'introduzione di nuove strategie e tecnologie che stanno trasformando il modo in cui il gioco viene giocato e gestito.</p>
-						<div class="px-6 py-4 flex justify-between items-center">
-						  <a href="#" class="text-blue-600 font-semibold">SCOPRI DI PIÙ</a>
-						  <div class="flex items-center">
-							<i class="fas fa-thumbs-up text-gray-500 mr-2"></i>
-							<span class="text-gray-500">42</span>
-						  </div>
-						</div>
-					  </div>
+					<div class="bg-white p-4 sm:p-6">
+					  <time datetime="26-06-2023" class="block text-xs text-gray-500">
+						26 Giu 2023
+					  </time>
+				  
+					  <a href="#">
+						<h3 class="mt-0.5 text-lg text-gray-900">
+						  How to position your furniture for positivity
+						</h3>
+					  </a>
+				  
+					  <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+						dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+						sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+						voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+						Molestias explicabo corporis voluptatem?
+					  </p>
 					</div>
-				  </div>
+				  </article>
+				  
 				  
 				  <script>
 					var searchInput = document.getElementById("search-input");

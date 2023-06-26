@@ -34,7 +34,7 @@
       <i class="fab fa-twitter text-white text-lg"></i>
     </a>
   </div>
-    <nav class="bg-gray-400 sm:w-full lg:w-full">
+    <nav class="bg-gray-300 sm:w-full lg:w-full">
       <div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
         <div class="flex items-center justify-between">
           <div class="flex-auto items-center sm:mx-auto sm:w-fit">
@@ -89,22 +89,22 @@
       </div>
     </nav>
     <div class="min-h-screen flex flex-col justify-center items-center bg-gray-800 py-12">
-        <div class="md:w-3/4 lg:w-1/3 bg-gray-500 rounded-lg p-6 md: mb-60">
-            <div class="border border-blue-500 bg-gray-800 rounded-lg p-4 mb-4">
-                <h2 class="text-blue-500 text-2xl my-3 text-center">ACCEDI</h2>
+        <div class="md:w-3/4 lg:w-1/3 bg-gray-300 rounded-lg p-6 md: mb-60">
+            <div class= "font-bold p-4 mb-4">
+                <h2 class="text-blue-700 text-4xl my-3 text-center">ACCEDI</h2>
             </div>
 
             <div class="mb-4">
-                <label aria-placeholder="Insersci e-mail o Username..." class="block text-white">Indirizzo e-mail o
+                <label class="block font-bold">Indirizzo e-mail o
                     Username:</label>
-                <input type="email"
+                <input placeholder="Insersci e-mail o Username..." type="email"
                     class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full" />
                 </div>
 
 
             <div class="mb-4">
-                <label aria-placeholder="Insersci password..." class="block text-white">Password:</label>
-                <input type="password"
+                <label class="block font-bold">Password:</label>
+                <input placeholder="Insersci password..." type="password"
                     class="bg-gray-700 text-white placeholder-gray-400 border border-white rounded-lg p-2 w-full" />
             </div>
 
@@ -116,23 +116,23 @@
               });
             </script>
 
-            <p class="mt-2 text-white text-center">
-                <a href="https://www.google.com/" class="text-center text-blue-700 font-bold  ">Hai dimenticato la
-                    password?</a>
-                <br>
-                Non hai un account?
-                <a href="registrazione.html " class="text-blue-700 font-bold w-full "> Registrati!</a>
-            </p>
+       <p class="mt-2 text-white text-center">
+          <a href="https://www.google.com/" class="text-center text-blue-700 font-bold">Hai dimenticato la password?</a>
+          <br>
+          <span class=" text-black font-bold">Non hai un account?</span>
+          <a href="registrazione.html" class="text-blue-700 font-bold w-full">Registrati!</a>
+      </p>
+
             <div class="relative flex items-center justify-center mt-5">
-                <div class="h-px bg-gray-300 w-full"></div>
-                <span class="mx-2 text-gray-800">OPPURE</span>
-                <div class="h-px bg-gray-300 w-full"></div>
+                <div class="h-px bg-gray-800 w-full"></div>
+                <span class="mx-2 text-black font-bold">OPPURE</span>
+                <div class="h-px bg-gray-800 w-full"></div>
             </div>
 
             <div class="flex flex-col items-center">
-                <button id="google" onclick="" class="border border-white rounded-lg px-6 py-2 flex items-center my-4 w-full">
-                    <i class="fab fa-google text-white mr-2 text-2xl"></i>
-                    <span class="text-white">Accedi con Google</span>
+                <button id="google" onclick="" class="border border-black rounded-lg px-6 py-2 flex items-center my-4 w-full">
+                    <i class="fab fa-google text-blue-700 mr-2 text-2xl"></i>
+                    <span class="text-black font-bold">Accedi con Google</span>
                 </button>
                   <form action="/api/auth/signin" method="post">
                 <script>
