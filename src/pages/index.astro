@@ -133,21 +133,22 @@
 		  
 			  <div class="flex">
 				<!-- Filters (Desktop) -->
-				<div class=" bg-gray-300 p-4 rounded mr-8">
-				  <h2 class="text-xl font-semibold mb-4">Filtri</h2>
-				  <div class="flex items-center mb-2">
-					<input type="checkbox" id="topic-filter" class="mr-2">
-					<label for="topic-filter">Per argomento</label>
+				<div class="bg-gray-300 p-4 rounded mr-8 hidden md:block" id="filter-container">
+					<h2 class="text-xl font-semibold mb-4">Filtri</h2>
+					<div class="flex items-center mb-2">
+					  <input type="checkbox" id="topic-filter" class="mr-2">
+					  <label for="topic-filter">Per argomento</label>
+					</div>
+					<div class="flex items-center mb-2">
+					  <input type="checkbox" id="popular-filter" class="mr-2">
+					  <label for="popular-filter">Più valutati</label>
+					</div>
+					<div class="flex items-center mb-2">
+					  <input type="checkbox" id="recent-filter" class="mr-2">
+					  <label for="recent-filter">Più recenti</label>
+					</div>
 				  </div>
-				  <div class="flex items-center mb-2">
-					<input type="checkbox" id="popular-filter" class="mr-2">
-					<label for="popular-filter">Più valutati</label>
-				  </div>
-				  <div class="flex items-center mb-2">
-					<input type="checkbox" id="recent-filter" class="mr-2">
-					<label for="recent-filter">Più recenti</label>
-				  </div>
-				</div>
+				  
 				<div class="mb-4">
 					<article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
 					  <img

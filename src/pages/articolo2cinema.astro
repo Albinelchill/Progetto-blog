@@ -1,82 +1,320 @@
-<nav class="bg-gray-300 sm:w-full lg:w-full">
-    <div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
-      <div class="flex items-center justify-between">
-        <div class="flex-auto items-center sm:mx-auto sm:w-fit">
-          <div class="relative inline-block sm:hidden">
-            <button class="menu-btn text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">
-              Menu
-              <svg class="w-4 h-4 inline-block ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 9l6 6 6-6" />
-              </svg>
-            </button>
-            <div class="absolute hidden text-gray-900 bg-white mt-2 py-2 w-32 rounded-lg shadow-lg z-10" id="mobile-menu">
-              <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
-              <div class="group relative inline-block">
-                <button class="submenu-btn block px-4 py-2 hover:bg-gray-100">News
-                  <svg class="w-4 h-4 inline-block ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M6 9l6 6 6-6" />
-                  </svg>
-                </button>
-                <div class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu" id="news-submenu">
-                  <a href="sport.html" class="block px-4 py-2 hover:bg-gray-100">Sport</a>
-                  <a href="musica.html" class="block px-4 py-2 hover:bg-gray-100">Musica</a>
-                  <a href="cinema.html" class="block px-4 py-2 hover:bg-gray-100">Cinema</a>
-                </div>
-              </div>
-              <a href="contattaci.html" class="block px-4 py-2 hover:bg-gray-100">Contattaci</a>
-              <a href="about.html" class="block px-4 py-2 hover:bg-gray-100">About</a>
-            </div>
-          </div>
-          <div class="hidden sm:flex">
-            <a href="index.html" class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">Home</a>
-            <div class="group relative inline-block">
-              <button class="submenu-btn mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">News
-                <svg class="w-4 h-4 inline-block ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M6 9l6 6 6-6" />
+---
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Articolo</title>
+  </head>
+
+  <body class="bg-gray-100">
+    <div
+      class="flex justify-center items-center bg-gray-800 sm:w-full md:h-full md:w-full lg:w-full"
+    >
+      <a href="index.html">
+        <img src="logo.jpeg" alt="logo del blog" class="h-40 w-56 my-6" />
+      </a>
+    </div>
+
+    <div
+      class="absolute top-0 right-0 mt-4 mr-4 flex-wrap justify-end flex flex-col sm:flex-row sm:items-center"
+    >
+      <a
+        href="https://www.instagram.com/cronachediresistenzaaa/"
+        class="ml-2 sm:ml-0 mb-2 sm:mb-0"
+      >
+        <i class="fab fa-instagram text-white text-lg"></i>
+      </a>
+      <a
+        href="https://www.facebook.com/profile.php?id=100094044757182"
+        class="ml-2 sm:ml-4 mb-2 sm:mb-0"
+      >
+        <i class="fab fa-facebook text-white text-lg"></i>
+      </a>
+      <a
+        href="https://twitter.com/Alberto2040213"
+        class="ml-2 sm:ml-4 sm:mr-4 mb-2 sm:mb-0"
+      >
+        <i class="fab fa-twitter text-white text-lg"></i>
+      </a>
+    </div>
+    <nav class="bg-gray-300 sm:w-full lg:w-full">
+      <div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
+        <div class="flex items-center justify-between">
+          <div class="flex-auto items-center sm:mx-auto sm:w-fit">
+            <div class="relative inline-block sm:hidden">
+              <button
+                class="menu-btn text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+              >
+                Menu
+                <svg
+                  class="w-4 h-4 inline-block ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
                 </svg>
               </button>
-              <div class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu" id="news-submenu">
-                <a href="sport.html" class="block px-4 py-2 hover:bg-gray-100">Sport</a>
-                <a href="musica.html" class="block px-4 py-2 hover:bg-gray-100">Musica</a>
-                <a href="cinema.html" class="block px-4 py-2 hover:bg-gray-100">Cinema</a>
+              <div
+                class="absolute hidden text-gray-900 bg-white mt-2 py-2 w-32 rounded-lg shadow-lg z-10"
+                id="mobile-menu"
+              >
+                <a href="index.html" class="block px-4 py-2 hover:bg-gray-100"
+                  >Home</a
+                >
+                <div class="group relative inline-block">
+                  <button class="submenu-btn block px-4 py-2 hover:bg-gray-100"
+                    >News
+                    <svg
+                      class="w-4 h-4 inline-block ml-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M6 9l6 6 6-6"></path>
+                    </svg>
+                  </button>
+                  <div
+                    class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
+                    id="news-submenu"
+                  >
+                    <a
+                      href="sport.html"
+                      class="block px-4 py-2 hover:bg-gray-100">Sport</a
+                    >
+                    <a
+                      href="musica.html"
+                      class="block px-4 py-2 hover:bg-gray-100">Musica</a
+                    >
+                    <a
+                      href="cinema.html"
+                      class="block px-4 py-2 hover:bg-gray-100">Cinema</a
+                    >
+                  </div>
+                </div>
+                <a
+                  href="contattaci.html"
+                  class="block px-4 py-2 hover:bg-gray-100">Contattaci</a
+                >
+                <a href="about.html" class="block px-4 py-2 hover:bg-gray-100"
+                  >About</a
+                >
               </div>
             </div>
-            <a href="contattaci.html" class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">Contattaci</a>
-            <a href="about.html" class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg">About</a>
+            <div class="hidden sm:flex">
+              <a
+                href="index.html"
+                class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                >Home</a
+              >
+              <div class="group relative inline-block">
+                <button
+                  class="submenu-btn mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                  >News
+                  <svg
+                    class="w-4 h-4 inline-block ml-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </button>
+                <div
+                  class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
+                  id="news-submenu"
+                >
+                  <a href="sport.html" class="block px-4 py-2 hover:bg-gray-100"
+                    >Sport</a
+                  >
+                  <a
+                    href="musica.html"
+                    class="block px-4 py-2 hover:bg-gray-100">Musica</a
+                  >
+                  <a
+                    href="cinema.html"
+                    class="block px-4 py-2 hover:bg-gray-100">Cinema</a
+                  >
+                </div>
+              </div>
+              <a
+                href="contattaci.html"
+                class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                >Contattaci</a
+              >
+              <a
+                href="about.html"
+                class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                >About</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center">
+            <a
+              href="accesso.html"
+              class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs"
+              >Log-in</a
+            >
+            <a
+              href="registrazione.html"
+              class="bg-blue-600 hover:bg-blue-800 text-white font-semibold my-3 py-2 px-4 rounded sm:text-xs bg-gradient-to-r from-blue-500 to-blue-700"
+              >Sign-in</a
+            >
           </div>
         </div>
-        <div class="flex items-center">
-          <a href="accesso.html" class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs">Log-in</a>
-          <a href="registrazione.html" class="bg-blue-600 hover:bg-blue-800 text-white font-semibold my-3 py-2 px-4 rounded sm:text-xs bg-gradient-to-r from-blue-500 to-blue-700">Sign-in</a>
-        </div>
       </div>
+    </nav>
+
+    <div
+      class="min-h-screen flex flex-col justify-center items-center bg-gray-800 py-12"
+    >
+      <article class="group">
+        <div class="md:w-fit lg:mx-6 bg-gray-300 rounded-lg p-6 md:mb-60">
+          <h1 class="my-6 text-5xl font-bold text-gray-900">Chi sia stato non si sa</h1>
+          <div class="flex justify-center">
+            <img
+              alt="Spider-man: Across the spider-verse"
+              src="spider-man-across-the-spider-verse.jpg"
+              class="h-auto max-h-[36rem] w-full"
+            />
+          </div>
+          <p class="mt-10 text-lg/relaxed text-gray-900">
+            Il multiverso è un concetto di cui ormai sappiamo spaventosamente
+            troppo: negli ultimi anni è scoppiata una specie di moda; tutti ne
+            parlano, ma non tutti riescono a farlo come vorrebbero, neppure i
+            Marvel Studios che sul multiverso stanno improntando una nuova saga
+            cinematografica. Forse è anche per questo che Spider-Man: Across the
+            Spider-Verse - che coi Marvel Studios c'entra relativamente poco,
+            essendo targato Sony e Columbia Pictures - colpisce nel segno: gioca
+            la carta del multiverso così bene che quasi passa in secondo piano.
+            Seguito dell'ottimo Spider-Man: Un nuovo universo del 2018, uno dei
+            pochi lungometraggi ad aver strappato l'Oscar annuale alle pellicole
+            Disney, il nuovo film ci riporta in quella dimensione di mezzo dove
+            risiede la licenza dell'Uomo Ragno, un po' Sony e un po' Marvel, e
+            dove il protagonista non è lo storico Peter Parker, ma il giovane
+            Miles Morales. Nato dalla penna di Brian Michael Bendis e dalla
+            matita dell'italianissima Sara Pichelli nel lontano 2011, Miles col
+            passare degli anni è diventato sempre più popolare, assumendo il
+            ruolo di protagonista anche nei videogiochi col Marvel's Spider-Man:
+            Miles Morales di Insomniac. Insomma, non potevamo mancare
+            l'appuntamento col cinema e nella nostra recensione di Spider-Man:
+            Across the Spider-Verse vi spiegheremo perché vale la pena staccare
+            un biglietto per il prossimo spettacolo. Spider-Gwen è l'altra,
+            grande protagonista di Across the Spider-Verse Se per noi di anni ne
+            sono passati cinque, in questo lungometraggio ne è passato soltanto
+            uno da quando il protagonista e gli altri Spider-Man hanno salvato
+            il multiverso, dicendosi apparentemente addio. Da allora Miles è
+            cresciuto più in fretta del previsto, abbracciando un'identità super
+            eroica priva di acuti mentre si divide tra le sue frustrazioni e
+            quelle dei suoi genitori, Jeff e Rio, che lo sentono allontanarsi
+            come un qualsivoglia adolescente. Anche Gwen non se l'è passata
+            bene: sempre più sola, la ragazza trova conforto in una squadra di
+            eroi interdimensionali che, capitanati da un torvo Spider-Man di
+            nome Miguel O'Hara, si battono per proteggere il multiverso dalle
+            interferenze che rischiano di rompere il cosiddetto "canone". Quando
+            una di queste interferenze - la Macchia, uno scienziato pazzo
+            trasformato in un inquietante super criminale proprio
+            dall'esplosione dell'acceleratore Alchemax nel primo film - prende
+            di mira proprio Miles, quest'ultimo finisce coinvolto suo malgrado
+            in una storia molto più grande di lui, sebbene ne sia
+            l'inconsapevole protagonista. Su questo giochetto gli scrittori Phil
+            Lord e Cristopher Miller - già autori di Un nuovo universo, ma anche
+            del bellissimo The LEGO Movie - imbastiscono una storia più
+            articolata del previsto, in cui contano soprattutto le sfumature:
+            Gwen è a tratti più centrale di Miles, che per la maggior parte del
+            film assume un ruolo di spettatore, trascinato dagli eventi e fulcro
+            di ogni conflitto, non solo supereroistico, ma anche famigliare e
+            sentimentale. Across the Spider-Verse è un film che trova in questi
+            conflitti la sua quadra: sono molto, ma molto più importanti degli
+            inseguimenti mozzafiato o dei combattimenti tra superumani e parlano
+            a ogni età in modo diverso. In Across the Spider-Verse c'è la paura
+            che i figli hanno di crescere e anche, forse soprattutto, la paura
+            che i genitori hanno di lasciarli andare. Lord e Miller descrivono
+            questo scontro generazionale - volendo, il cuore di tante storie di
+            giovani supereroi - con una sensibilità e una naturalezza che hanno
+            dell'incredibile, grazie anche alla straordinaria espressività dei
+            personaggi in computer grafica. Non stupisce, quindi, che gli
+            antagonisti della pellicola - e in special modo la Macchia - siano
+            altrettanto ben caratterizzati. Che poi, "antagonisti" è una parola
+            che sta quasi stretta a certi personaggi e al modo in cui Lord e
+            Miller riescono a scriverli, senza che appaiano scontati o
+            prevedibili. Messa in questi termini, Across the Spider-Verse
+            potrebbe sembrare un cinecomic insolitamente pesante, in cui
+            l'introspezione conta più dell'azione, e in parte è anche vero: la
+            pellicola tende a rallentare nel segmento centrale, ma lo fa
+            gradualmente e in maniera misurata, senza che sembri una brusca
+            frenata. Vi diciamo subito che la prima parte del film è quella che
+            ci ha convinto meno, col suo caotico susseguirsi di scontri e
+            inseguimenti che tendono a essere anche un pelo troppo confusi;
+            d'altra parte, è il linguaggio di un film che ibrida continuamente
+            scenari, soluzioni visive e scelte cromatiche appartenenti a
+            universi - e quindi, immaginari - differenti. Ma superato lo scoglio
+            di un inizio forse eccessivamente frenetico, Across the Spider-Verse
+            si svolge con un equilibrio raro e cambia persino tono, facendosi
+            più adulto insieme ai protagonisti mentre la posta in gioco si alza
+            e ci si avvicina ai minuti finali, tesissimi e incalzanti, grazie
+            anche alle musiche praticamente perfette di Daniel Pemberton. Un
+            celebre meme prende vita in una scena di Spider-Man: Across the
+            Spider-Verse Se poi c'è una cosa che Across the Spider-Verse fa bene
+            è quello che oggi definiremmo volgarmente fanservice, sebbene sia
+            quasi un disservizio chiamarlo così in questo contesto: è al soldo
+            della narrativa, come una specie di gioco che il film fa con lo
+            spettatore, ma senza sfidarlo a fermare l'immagine per riconoscere
+            tutti gli Spider-Man che appaiono nel quartier generale della
+            Spider-Society. Nel mentre che la pellicola si popola di personaggi
+            totalmente diversi e sempre più assurdi, anche nel linguaggio visivo
+            con cui sono rappresentati, Lord e Miller proseguono il delicato
+            lavoro di ricongiungimento con cui i Marvel Studios stanno
+            collegando i vari film di Spider-Man dopo i fatti di No Way Home. Ma
+            non vi diciamo altro per non rovinarvi la sorpresa. Across the
+            Spider-Verse fa a pezzi la metanarrativa canonica con una serie di
+            soluzioni audaci che mettono potenzialmente in discussione ogni
+            esito. Tuttavia, dovremo aspettare come minimo il prossimo anno per
+            sapere come andrà a finire la storia: il nuovo film si chiude con un
+            portentoso cliffhanger che rimanda a una terza e conclusiva
+            pellicola, Beyond the Spider-Verse. Questo potrebbe essere l'unico
+            difetto di un film che è un momento di transizione, una sorta di
+            ponte, e che si potrebbe facilmente accostare a L'Impero colpisce
+            ancora di Star Wars: la regia a sei mani di Joaquim Dos Santos, Kemp
+            Powers e Justin K. Thompson spreme le idee visionarie del primo film
+            e le esalta grazie a un sensibile miglioramento tecnico. Across the
+            Spider-Verse è visivamente incredibile, un film in computer grafica
+            di rara bellezza che osa e stupisce, anche se magari non sempre come
+            avremmo voluto perché certe trovate risalgono già al primo film. In
+            ogni caso, è impossibile restare indifferenti: Across the
+            Spider-Verse è un'esperienza cinematografica viscerale che scivola
+            via in un attimo, nonostante duri quasi due ore e mezza, e che i fan
+            dell'Arrampicamuri dovrebbero assolutamente godersi in un buon
+            cinema.
+          </p>
+        </div>
+      </article>
     </div>
-</nav>
-
-Il multiverso è un concetto di cui ormai sappiamo spaventosamente troppo: negli ultimi anni è scoppiata una specie di moda; tutti ne parlano, ma non tutti riescono a farlo come vorrebbero, neppure i Marvel Studios che sul multiverso stanno improntando una nuova saga cinematografica. Forse è anche per questo che Spider-Man: Across the Spider-Verse - che coi Marvel Studios c'entra relativamente poco, essendo targato Sony e Columbia Pictures - colpisce nel segno: gioca la carta del multiverso così bene che quasi passa in secondo piano.
-
-Seguito dell'ottimo Spider-Man: Un nuovo universo del 2018, uno dei pochi lungometraggi ad aver strappato l'Oscar annuale alle pellicole Disney, il nuovo film ci riporta in quella dimensione di mezzo dove risiede la licenza dell'Uomo Ragno, un po' Sony e un po' Marvel, e dove il protagonista non è lo storico Peter Parker, ma il giovane Miles Morales. Nato dalla penna di Brian Michael Bendis e dalla matita dell'italianissima Sara Pichelli nel lontano 2011, Miles col passare degli anni è diventato sempre più popolare, assumendo il ruolo di protagonista anche nei videogiochi col Marvel's Spider-Man: Miles Morales di Insomniac.
-
-Insomma, non potevamo mancare l'appuntamento col cinema e nella nostra recensione di Spider-Man: Across the Spider-Verse vi spiegheremo perché vale la pena staccare un biglietto per il prossimo spettacolo.
-
-Spider-Gwen è l'altra, grande protagonista di Across the Spider-Verse
-Se per noi di anni ne sono passati cinque, in questo lungometraggio ne è passato soltanto uno da quando il protagonista e gli altri Spider-Man hanno salvato il multiverso, dicendosi apparentemente addio. Da allora Miles è cresciuto più in fretta del previsto, abbracciando un'identità super eroica priva di acuti mentre si divide tra le sue frustrazioni e quelle dei suoi genitori, Jeff e Rio, che lo sentono allontanarsi come un qualsivoglia adolescente. Anche Gwen non se l'è passata bene: sempre più sola, la ragazza trova conforto in una squadra di eroi interdimensionali che, capitanati da un torvo Spider-Man di nome Miguel O'Hara, si battono per proteggere il multiverso dalle interferenze che rischiano di rompere il cosiddetto "canone".
-
-Quando una di queste interferenze - la Macchia, uno scienziato pazzo trasformato in un inquietante super criminale proprio dall'esplosione dell'acceleratore Alchemax nel primo film - prende di mira proprio Miles, quest'ultimo finisce coinvolto suo malgrado in una storia molto più grande di lui, sebbene ne sia l'inconsapevole protagonista.
-
-Su questo giochetto gli scrittori Phil Lord e Cristopher Miller - già autori di Un nuovo universo, ma anche del bellissimo The LEGO Movie - imbastiscono una storia più articolata del previsto, in cui contano soprattutto le sfumature: Gwen è a tratti più centrale di Miles, che per la maggior parte del film assume un ruolo di spettatore, trascinato dagli eventi e fulcro di ogni conflitto, non solo supereroistico, ma anche famigliare e sentimentale. Across the Spider-Verse è un film che trova in questi conflitti la sua quadra: sono molto, ma molto più importanti degli inseguimenti mozzafiato o dei combattimenti tra superumani e parlano a ogni età in modo diverso.
-
-In Across the Spider-Verse c'è la paura che i figli hanno di crescere e anche, forse soprattutto, la paura che i genitori hanno di lasciarli andare. Lord e Miller descrivono questo scontro generazionale - volendo, il cuore di tante storie di giovani supereroi - con una sensibilità e una naturalezza che hanno dell'incredibile, grazie anche alla straordinaria espressività dei personaggi in computer grafica.
-
-Non stupisce, quindi, che gli antagonisti della pellicola - e in special modo la Macchia - siano altrettanto ben caratterizzati. Che poi, "antagonisti" è una parola che sta quasi stretta a certi personaggi e al modo in cui Lord e Miller riescono a scriverli, senza che appaiano scontati o prevedibili. Messa in questi termini, Across the Spider-Verse potrebbe sembrare un cinecomic insolitamente pesante, in cui l'introspezione conta più dell'azione, e in parte è anche vero: la pellicola tende a rallentare nel segmento centrale, ma lo fa gradualmente e in maniera misurata, senza che sembri una brusca frenata.
-
-Vi diciamo subito che la prima parte del film è quella che ci ha convinto meno, col suo caotico susseguirsi di scontri e inseguimenti che tendono a essere anche un pelo troppo confusi; d'altra parte, è il linguaggio di un film che ibrida continuamente scenari, soluzioni visive e scelte cromatiche appartenenti a universi - e quindi, immaginari - differenti. Ma superato lo scoglio di un inizio forse eccessivamente frenetico, Across the Spider-Verse si svolge con un equilibrio raro e cambia persino tono, facendosi più adulto insieme ai protagonisti mentre la posta in gioco si alza e ci si avvicina ai minuti finali, tesissimi e incalzanti, grazie anche alle musiche praticamente perfette di Daniel Pemberton.
-
-Un celebre meme prende vita in una scena di Spider-Man: Across the Spider-Verse
-Se poi c'è una cosa che Across the Spider-Verse fa bene è quello che oggi definiremmo volgarmente fanservice, sebbene sia quasi un disservizio chiamarlo così in questo contesto: è al soldo della narrativa, come una specie di gioco che il film fa con lo spettatore, ma senza sfidarlo a fermare l'immagine per riconoscere tutti gli Spider-Man che appaiono nel quartier generale della Spider-Society. Nel mentre che la pellicola si popola di personaggi totalmente diversi e sempre più assurdi, anche nel linguaggio visivo con cui sono rappresentati, Lord e Miller proseguono il delicato lavoro di ricongiungimento con cui i Marvel Studios stanno collegando i vari film di Spider-Man dopo i fatti di No Way Home. Ma non vi diciamo altro per non rovinarvi la sorpresa.
-
-Across the Spider-Verse fa a pezzi la metanarrativa canonica con una serie di soluzioni audaci che mettono potenzialmente in discussione ogni esito. Tuttavia, dovremo aspettare come minimo il prossimo anno per sapere come andrà a finire la storia: il nuovo film si chiude con un portentoso cliffhanger che rimanda a una terza e conclusiva pellicola, Beyond the Spider-Verse. Questo potrebbe essere l'unico difetto di un film che è un momento di transizione, una sorta di ponte, e che si potrebbe facilmente accostare a L'Impero colpisce ancora di Star Wars: la regia a sei mani di Joaquim Dos Santos, Kemp Powers e Justin K. Thompson spreme le idee visionarie del primo film e le esalta grazie a un sensibile miglioramento tecnico. Across the Spider-Verse è visivamente incredibile, un film in computer grafica di rara bellezza che osa e stupisce, anche se magari non sempre come avremmo voluto perché certe trovate risalgono già al primo film.
-
-In ogni caso, è impossibile restare indifferenti: Across the Spider-Verse è un'esperienza cinematografica viscerale che scivola via in un attimo, nonostante duri quasi due ore e mezza, e che i fan dell'Arrampicamuri dovrebbero assolutamente godersi in un buon cinema.
-
-<img src="https://multiplayer.net-cdn.it/thumbs/images/2023/06/03/spider-man-across-the-spider-verse-pointing-meme_jpg_800x0_crop_upscale_q85.jpg"></img>
+  </body>
+</html>

@@ -1,38 +1,70 @@
-<nav class="bg-gray-400 sm:w-full lg:w-full">
-    <div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
-      <div class="flex items-center justify-between">
-        <div class="flex-auto items-center sm:mx-auto sm:w-fit">
-          <div class="relative inline-block sm:hidden">
-                    <button
-                        class="menu-btn text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                    >
-              Menu
-                        <svg
-                            class="w-4 h-4 inline-block ml-1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <path d="M6 9l6 6 6-6"></path>
-              </svg>
-            </button>
-                    <div
-                        class="absolute hidden text-gray-900 bg-white mt-2 py-2 w-32 rounded-lg shadow-lg z-10"
-                        id="mobile-menu"
-                    >
-                        <a
-                            href="index.html"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >Home</a
-                        >
-              <div class="group relative inline-block">
+---
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"
+        ></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <title>Articolo</title>
+    </head>
+
+    <body class="bg-gray-100">
+        <div
+            class="flex justify-center items-center bg-gray-800 sm:w-full md:h-full md:w-full lg:w-full"
+        >
+            <a href="index.html">
+                <img
+                    src="logo.jpeg"
+                    alt="logo del blog"
+                    class="h-40 w-56 my-6"
+                />
+            </a>
+        </div>
+
+        <div
+            class="absolute top-0 right-0 mt-4 mr-4 flex-wrap justify-end flex flex-col sm:flex-row sm:items-center"
+        >
+            <a
+                href="https://www.instagram.com/cronachediresistenzaaa/"
+                class="ml-2 sm:ml-0 mb-2 sm:mb-0"
+            >
+                <i class="fab fa-instagram text-white text-lg"></i>
+            </a>
+            <a
+                href="https://www.facebook.com/profile.php?id=100094044757182"
+                class="ml-2 sm:ml-4 mb-2 sm:mb-0"
+            >
+                <i class="fab fa-facebook text-white text-lg"></i>
+            </a>
+            <a
+                href="https://twitter.com/Alberto2040213"
+                class="ml-2 sm:ml-4 sm:mr-4 mb-2 sm:mb-0"
+            >
+                <i class="fab fa-twitter text-white text-lg"></i>
+            </a>
+        </div>
+        <nav class="bg-gray-300 sm:w-full lg:w-full">
+            <div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
+                <div class="flex items-center justify-between">
+                    <div class="flex-auto items-center sm:mx-auto sm:w-fit">
+                        <div class="relative inline-block sm:hidden">
                             <button
-                                class="submenu-btn block px-4 py-2 hover:bg-gray-100"
-                                >News
+                                class="menu-btn text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                            >
+                                Menu
                                 <svg
                                     class="w-4 h-4 inline-block ml-1"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -44,125 +76,230 @@
                                     stroke-linejoin="round"
                                 >
                                     <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </button>
+                                </svg>
+                            </button>
                             <div
-                                class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
-                                id="news-submenu"
+                                class="absolute hidden text-gray-900 bg-white mt-2 py-2 w-32 rounded-lg shadow-lg z-10"
+                                id="mobile-menu"
                             >
                                 <a
-                                    href="sport.html"
+                                    href="index.html"
                                     class="block px-4 py-2 hover:bg-gray-100"
-                                    >Sport</a
+                                    >Home</a
+                                >
+                                <div class="group relative inline-block">
+                                    <button
+                                        class="submenu-btn block px-4 py-2 hover:bg-gray-100"
+                                        >News
+                                        <svg
+                                            class="w-4 h-4 inline-block ml-1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path d="M6 9l6 6 6-6"></path>
+                                        </svg>
+                                    </button>
+                                    <div
+                                        class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
+                                        id="news-submenu"
+                                    >
+                                        <a
+                                            href="sport.html"
+                                            class="block px-4 py-2 hover:bg-gray-100"
+                                            >Sport</a
+                                        >
+                                        <a
+                                            href="musica.html"
+                                            class="block px-4 py-2 hover:bg-gray-100"
+                                            >Musica</a
+                                        >
+                                        <a
+                                            href="cinema.html"
+                                            class="block px-4 py-2 hover:bg-gray-100"
+                                            >Cinema</a
+                                        >
+                                    </div>
+                                </div>
+                                <a
+                                    href="contattaci.html"
+                                    class="block px-4 py-2 hover:bg-gray-100"
+                                    >Contattaci</a
                                 >
                                 <a
-                                    href="musica.html"
+                                    href="about.html"
                                     class="block px-4 py-2 hover:bg-gray-100"
-                                    >Musica</a
+                                    >About</a
                                 >
-                                <a
-                                    href="cinema.html"
-                                    class="block px-4 py-2 hover:bg-gray-100"
-                                    >Cinema</a
+                            </div>
+                        </div>
+                        <div class="hidden sm:flex">
+                            <a
+                                href="index.html"
+                                class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                                >Home</a
+                            >
+                            <div class="group relative inline-block">
+                                <button
+                                    class="submenu-btn mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                                    >News
+                                    <svg
+                                        class="w-4 h-4 inline-block ml-1"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </button>
+                                <div
+                                    class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
+                                    id="news-submenu"
                                 >
+                                    <a
+                                        href="sport.html"
+                                        class="block px-4 py-2 hover:bg-gray-100"
+                                        >Sport</a
+                                    >
+                                    <a
+                                        href="musica.html"
+                                        class="block px-4 py-2 hover:bg-gray-100"
+                                        >Musica</a
+                                    >
+                                    <a
+                                        href="cinema.html"
+                                        class="block px-4 py-2 hover:bg-gray-100"
+                                        >Cinema</a
+                                    >
+                                </div>
+                            </div>
+                            <a
+                                href="contattaci.html"
+                                class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                                >Contattaci</a
+                            >
+                            <a
+                                href="about.html"
+                                class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                                >About</a
+                            >
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <a
+                            href="accesso.html"
+                            class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs"
+                            >Log-in</a
+                        >
+                        <a
+                            href="registrazione.html"
+                            class="bg-blue-600 hover:bg-blue-800 text-white font-semibold my-3 py-2 px-4 rounded sm:text-xs bg-gradient-to-r from-blue-500 to-blue-700"
+                            >Sign-in</a
+                        >
+                    </div>
                 </div>
-              </div>
-                        <a
-                            href="contattaci.html"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >Contattaci</a
-                        >
-                        <a
-                            href="about.html"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >About</a
-                        >
             </div>
-          </div>
-          <div class="hidden sm:flex">
-                    <a
-                        href="index.html"
-                        class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                        >Home</a
-                    >
-            <div class="group relative inline-block">
-                        <button
-                            class="submenu-btn mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                            >News
-                            <svg
-                                class="w-4 h-4 inline-block ml-1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </button>
-                        <div
-                            class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
-                            id="news-submenu"
-                        >
-                            <a
-                                href="sport.html"
-                                class="block px-4 py-2 hover:bg-gray-100"
-                                >Sport</a
-                            >
-                            <a
-                                href="musica.html"
-                                class="block px-4 py-2 hover:bg-gray-100"
-                                >Musica</a
-                            >
-                            <a
-                                href="cinema.html"
-                                class="block px-4 py-2 hover:bg-gray-100"
-                                >Cinema</a
-                            >
-              </div>
-            </div>
-                    <a
-                        href="contattaci.html"
-                        class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                        >Contattaci</a
-                    >
-                    <a
-                        href="about.html"
-                        class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                        >About</a
-                    >
-          </div>
-        </div>
-        <div class="flex items-center">
-                <a
-                    href="accesso.html"
-                    class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs"
-                    >Log-in</a
+        </nav>
+
+        <div
+            class="min-h-screen flex flex-col justify-center items-center bg-gray-800 py-12"
+        >
+            <article class="group">
+                <div
+                    class="md:w-fit lg:mx-6 bg-gray-300 rounded-lg p-6 md:mb-60"
                 >
-                <a
-                    href="registrazione.html"
-                    class="bg-blue-600 hover:bg-blue-800 text-white font-semibold my-3 py-2 px-4 rounded sm:text-xs"
-                    >Sign-in</a
-                >
+                    <h1 class="my-6 text-5xl font-bold text-gray-900">
+                        Capo della drill
+                    </h1>
+                    <div class="flex justify-center">
+                        <img
+                          alt="Musica Centra Cee"
+                          src="CENTRAL1.jpg"
+                          class="h-auto max-h-[36rem] w-full"
+                        />
+                      </div>
+                    <p class="mt-10 text-lg/relaxed text-gray-900">
+                        Central Cee, pseudonimo di Oakley Neil H T Caesar-Su
+                        (Londra, 4 giugno 1998), è un rapper britannico. Il suo
+                        mixtape di debutto, Wild West (2021), è stato accolto
+                        favorevolmente dalla critica e ha debuttato alla seconda
+                        posizione della Official Albums Chart. Ad esso hanno
+                        fatto seguito nel 2022 il secondo mixtape 23, che ha
+                        raggiunto la prima posizione nel Regno Unito, e i
+                        singoli di successo internazionale Doja e Let Go. Nel
+                        2023 ottiene anche la prima posizione nella classifica
+                        dei singoli con il brano Sprinter, in collaborazione con
+                        il collega Dave. Oakley Neil H T Caesar-Su nacque il 4
+                        giugno 1998 nel quartiere londinese di Shepherd's Bush,
+                        da madre irlandese e padre guyanese di origini
+                        ecuadoriane con discendenza aruachi. Crebbe ascoltando
+                        hip hop, reggae e dancehall grazie al padre. Lavorò per
+                        tre settimane in un negozio di scarpe, ma appena scoprì
+                        a quanto ammontasse lo stipendio, lasciò il lavoro.
+                        Central Cee iniziò pubblicare musica nel 2012 all'età di
+                        quattordici anni. A gennaio 2015 compare nel brano Ain't
+                        On Nuttin Remix con J Hus e Bonkaz e in quell'occasione
+                        venne concepito il suo nome d'arte, appunto "Central
+                        Cee" (in origine "Central C"). Il mese successivo
+                        pubblicò il suo primo brano ufficiale, StreetHeat
+                        Freestyle, ma iniziò a farsi notare solo nel 2018 con
+                        Running Man, continuando a pubblicare poi alcuni singoli
+                        durante il 2019, anno del freestyle Next Up?, per il
+                        canale d'intrattenimento musicale Mixtape Madness. In
+                        questo periodo si avvicinò alla UK drill, abbandonando
+                        hip-hop e auto-tune: pubblica quindi il singolo Day in
+                        the Life il 14 giugno 2020, seguito da Molly il 27
+                        luglio, il freestyle Mad About Bars per Mixtape Madness
+                        il 17 agosto e infine Loading il 22 ottobre. Il 2021
+                        inizia con la pubblicazione di Pinging (6 Figures) e
+                        Commitment Issues: quest'ultimo brano raggiunse la nona
+                        posizione nella Official Singles Chart, risultando
+                        seconda top venti per l'artista dopo il diciannovesimo
+                        posto di Loading. Il 26 febbraio appare nel singolo
+                        Movie del rapper italiano Rondodasosa. Il suo mixtape di
+                        debutto, Wild West, venne pubblicato indipendentemente
+                        il 12 marzo. Anticipato da quattro singoli estratti (Day
+                        in the Life, Loading, Pinging e Commitment Issues), il
+                        disco raggiunse la seconda posizione della Official
+                        Albums Chart grazie a 15 105 unità equivalenti ad album
+                        vendute nella prima settimana, di cui 6 302 copie
+                        fisiche. Il 10 settembre Central Cee pubblica a sorpresa
+                        il singolo Obsessed with You, il quale contiene un
+                        campionamento di Just for Me della cantante connazionale
+                        PinkPantheress, andato virale sulla piattaforma TikTok.
+                        Il 25 dicembre viene pubblicato il suo freestyle per il
+                        canale GRM Daily. Il 6 gennaio 2022 esce il singolo
+                        Retail Therapy, mentre il 28 viene annunciata la lista
+                        tracce del secondo mixtape 23, la cui pubblicazione
+                        avvenne il 25 febbraio 2022. Il progetto esordì
+                        direttamente al primo posto della classifica degli album
+                        britannica. Il 21 luglio 2022 viene messo in commercio
+                        il singolo Doja, diventato il brano di Central Cee con
+                        il più alto posizionamento nella classifica dei singoli
+                        britannica. Doja, accompagnato dal relativo videoclip
+                        musicale diretto da Cole Bennett, ha raggiunto il primo
+                        posto in Nuova Zelanda e il terzo in Australia,
+                        ottenendo successo a livello internazionale. In autunno
+                        pubblica l'EP No More Leaks, composto da quattro tracce
+                        incluso il singolo One Up; contemporaneamente, l'artista
+                        fu impegnato con il Still Loading World Tour, sua prima
+                        tournée mondiale estesa anche al 2023. Poco prima della
+                        data di Londra tenutasi il 22 novembre 2022, Central Cee
+                        registrò il video del singolo Let Go, distribuito il
+                        successivo 15 dicembre. Il brano, che campiona il
+                        celebre Let Her Go di Passenger, ha debuttato al primo
+                        posto in Francia.
+                    </p>
+                </div>
+            </article>
         </div>
-      </div>
-    </div>
-  </nav>
-
-Central Cee, pseudonimo di Oakley Neil H T Caesar-Su (Londra, 4 giugno 1998), è un rapper britannico.
-
-Il suo mixtape di debutto, Wild West (2021), è stato accolto favorevolmente dalla critica e ha debuttato alla seconda posizione della Official Albums Chart. Ad esso hanno fatto seguito nel 2022 il secondo mixtape 23, che ha raggiunto la prima posizione nel Regno Unito, e i singoli di successo internazionale Doja e Let Go. Nel 2023 ottiene anche la prima posizione nella classifica dei singoli con il brano Sprinter, in collaborazione con il collega Dave.
-Oakley Neil H T Caesar-Su nacque il 4 giugno 1998 nel quartiere londinese di Shepherd's Bush, da madre irlandese e padre guyanese di origini ecuadoriane con discendenza aruachi. Crebbe ascoltando hip hop, reggae e dancehall grazie al padre. Lavorò per tre settimane in un negozio di scarpe, ma appena scoprì a quanto ammontasse lo stipendio, lasciò il lavoro.
-
-Central Cee iniziò pubblicare musica nel 2012 all'età di quattordici anni. A gennaio 2015 compare nel brano Ain't On Nuttin Remix con J Hus e Bonkaz e in quell'occasione venne concepito il suo nome d'arte, appunto "Central Cee" (in origine "Central C"). Il mese successivo pubblicò il suo primo brano ufficiale, StreetHeat Freestyle, ma iniziò a farsi notare solo nel 2018 con Running Man, continuando a pubblicare poi alcuni singoli durante il 2019, anno del freestyle Next Up?, per il canale d'intrattenimento musicale Mixtape Madness.
-
-In questo periodo si avvicinò alla UK drill, abbandonando hip-hop e auto-tune: pubblica quindi il singolo Day in the Life il 14 giugno 2020, seguito da Molly il 27 luglio, il freestyle Mad About Bars per Mixtape Madness il 17 agosto e infine Loading il 22 ottobre.
-
-Il 2021 inizia con la pubblicazione di Pinging (6 Figures) e Commitment Issues: quest'ultimo brano raggiunse la nona posizione nella Official Singles Chart, risultando seconda top venti per l'artista dopo il diciannovesimo posto di Loading. Il 26 febbraio appare nel singolo Movie del rapper italiano Rondodasosa. Il suo mixtape di debutto, Wild West, venne pubblicato indipendentemente il 12 marzo. Anticipato da quattro singoli estratti (Day in the Life, Loading, Pinging e Commitment Issues), il disco raggiunse la seconda posizione della Official Albums Chart grazie a 15 105 unità equivalenti ad album vendute nella prima settimana, di cui 6 302 copie fisiche.
-
-Il 10 settembre Central Cee pubblica a sorpresa il singolo Obsessed with You, il quale contiene un campionamento di Just for Me della cantante connazionale PinkPantheress, andato virale sulla piattaforma TikTok. Il 25 dicembre viene pubblicato il suo freestyle per il canale GRM Daily. Il 6 gennaio 2022 esce il singolo Retail Therapy, mentre il 28 viene annunciata la lista tracce del secondo mixtape 23, la cui pubblicazione avvenne il 25 febbraio 2022. Il progetto esordì direttamente al primo posto della classifica degli album britannica.
-
-Il 21 luglio 2022 viene messo in commercio il singolo Doja, diventato il brano di Central Cee con il più alto posizionamento nella classifica dei singoli britannica. Doja, accompagnato dal relativo videoclip musicale diretto da Cole Bennett, ha raggiunto il primo posto in Nuova Zelanda e il terzo in Australia, ottenendo successo a livello internazionale. In autunno pubblica l'EP No More Leaks, composto da quattro tracce incluso il singolo One Up; contemporaneamente, l'artista fu impegnato con il Still Loading World Tour, sua prima tournée mondiale estesa anche al 2023. Poco prima della data di Londra tenutasi il 22 novembre 2022, Central Cee registrò il video del singolo Let Go, distribuito il successivo 15 dicembre. Il brano, che campiona il celebre Let Her Go di Passenger, ha debuttato al primo posto in Francia.
-<img src="https://www.liceodonmilani.it/wp-content/uploads/2022/05/9F827FEB-5530-4DD5-8BAF-69CFEF0970CE.jpeg"></img>
+    </body>
+</html>

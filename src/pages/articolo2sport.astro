@@ -1,38 +1,70 @@
-<nav class="bg-gray-400 sm:w-full lg:w-full">
-    <div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
-        <div class="flex items-center justify-between">
-            <div class="flex-auto items-center sm:mx-auto sm:w-fit">
-                <div class="relative inline-block sm:hidden">
-                    <button
-                        class="menu-btn text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                    >
-                        Menu
-                        <svg
-                            class="w-4 h-4 inline-block ml-1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <path d="M6 9l6 6 6-6"></path>
-                        </svg>
-                    </button>
-                    <div
-                        class="absolute hidden text-gray-900 bg-white mt-2 py-2 w-32 rounded-lg shadow-lg z-10"
-                        id="mobile-menu"
-                    >
-                        <a
-                            href="index.html"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >Home</a
-                        >
-                        <div class="group relative inline-block">
+---
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"
+        ></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <title>Articolo</title>
+    </head>
+
+    <body class="bg-gray-100">
+        <div
+            class="flex justify-center items-center bg-gray-800 sm:w-full md:h-full md:w-full lg:w-full"
+        >
+            <a href="index.html">
+                <img
+                    src="logo.jpeg"
+                    alt="logo del blog"
+                    class="h-40 w-56 my-6"
+                />
+            </a>
+        </div>
+
+        <div
+            class="absolute top-0 right-0 mt-4 mr-4 flex-wrap justify-end flex flex-col sm:flex-row sm:items-center"
+        >
+            <a
+                href="https://www.instagram.com/cronachediresistenzaaa/"
+                class="ml-2 sm:ml-0 mb-2 sm:mb-0"
+            >
+                <i class="fab fa-instagram text-white text-lg"></i>
+            </a>
+            <a
+                href="https://www.facebook.com/profile.php?id=100094044757182"
+                class="ml-2 sm:ml-4 mb-2 sm:mb-0"
+            >
+                <i class="fab fa-facebook text-white text-lg"></i>
+            </a>
+            <a
+                href="https://twitter.com/Alberto2040213"
+                class="ml-2 sm:ml-4 sm:mr-4 mb-2 sm:mb-0"
+            >
+                <i class="fab fa-twitter text-white text-lg"></i>
+            </a>
+        </div>
+        <nav class="bg-gray-300 sm:w-full lg:w-full">
+            <div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
+                <div class="flex items-center justify-between">
+                    <div class="flex-auto items-center sm:mx-auto sm:w-fit">
+                        <div class="relative inline-block sm:hidden">
                             <button
-                                class="submenu-btn block px-4 py-2 hover:bg-gray-100"
-                                >News
+                                class="menu-btn text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                            >
+                                Menu
                                 <svg
                                     class="w-4 h-4 inline-block ml-1"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -47,115 +79,205 @@
                                 </svg>
                             </button>
                             <div
-                                class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
-                                id="news-submenu"
+                                class="absolute hidden text-gray-900 bg-white mt-2 py-2 w-32 rounded-lg shadow-lg z-10"
+                                id="mobile-menu"
                             >
                                 <a
-                                    href="sport.html"
+                                    href="index.html"
                                     class="block px-4 py-2 hover:bg-gray-100"
-                                    >Sport</a
+                                    >Home</a
+                                >
+                                <div class="group relative inline-block">
+                                    <button
+                                        class="submenu-btn block px-4 py-2 hover:bg-gray-100"
+                                        >News
+                                        <svg
+                                            class="w-4 h-4 inline-block ml-1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path d="M6 9l6 6 6-6"></path>
+                                        </svg>
+                                    </button>
+                                    <div
+                                        class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
+                                        id="news-submenu"
+                                    >
+                                        <a
+                                            href="sport.html"
+                                            class="block px-4 py-2 hover:bg-gray-100"
+                                            >Sport</a
+                                        >
+                                        <a
+                                            href="musica.html"
+                                            class="block px-4 py-2 hover:bg-gray-100"
+                                            >Musica</a
+                                        >
+                                        <a
+                                            href="cinema.html"
+                                            class="block px-4 py-2 hover:bg-gray-100"
+                                            >Cinema</a
+                                        >
+                                    </div>
+                                </div>
+                                <a
+                                    href="contattaci.html"
+                                    class="block px-4 py-2 hover:bg-gray-100"
+                                    >Contattaci</a
                                 >
                                 <a
-                                    href="musica.html"
+                                    href="about.html"
                                     class="block px-4 py-2 hover:bg-gray-100"
-                                    >Musica</a
-                                >
-                                <a
-                                    href="cinema.html"
-                                    class="block px-4 py-2 hover:bg-gray-100"
-                                    >Cinema</a
+                                    >About</a
                                 >
                             </div>
                         </div>
-                        <a
-                            href="contattaci.html"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >Contattaci</a
-                        >
-                        <a
-                            href="about.html"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >About</a
-                        >
-                    </div>
-                </div>
-                <div class="hidden sm:flex">
-                    <a
-                        href="index.html"
-                        class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                        >Home</a
-                    >
-                    <div class="group relative inline-block">
-                        <button
-                            class="submenu-btn mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                            >News
-                            <svg
-                                class="w-4 h-4 inline-block ml-1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M6 9l6 6 6-6"></path>
-                            </svg>
-                        </button>
-                        <div
-                            class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
-                            id="news-submenu"
-                        >
+                        <div class="hidden sm:flex">
                             <a
-                                href="sport.html"
-                                class="block px-4 py-2 hover:bg-gray-100"
-                                >Sport</a
+                                href="index.html"
+                                class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                                >Home</a
+                            >
+                            <div class="group relative inline-block">
+                                <button
+                                    class="submenu-btn mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                                    >News
+                                    <svg
+                                        class="w-4 h-4 inline-block ml-1"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </button>
+                                <div
+                                    class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
+                                    id="news-submenu"
+                                >
+                                    <a
+                                        href="sport.html"
+                                        class="block px-4 py-2 hover:bg-gray-100"
+                                        >Sport</a
+                                    >
+                                    <a
+                                        href="musica.html"
+                                        class="block px-4 py-2 hover:bg-gray-100"
+                                        >Musica</a
+                                    >
+                                    <a
+                                        href="cinema.html"
+                                        class="block px-4 py-2 hover:bg-gray-100"
+                                        >Cinema</a
+                                    >
+                                </div>
+                            </div>
+                            <a
+                                href="contattaci.html"
+                                class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                                >Contattaci</a
                             >
                             <a
-                                href="musica.html"
-                                class="block px-4 py-2 hover:bg-gray-100"
-                                >Musica</a
-                            >
-                            <a
-                                href="cinema.html"
-                                class="block px-4 py-2 hover:bg-gray-100"
-                                >Cinema</a
+                                href="about.html"
+                                class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                                >About</a
                             >
                         </div>
                     </div>
-                    <a
-                        href="contattaci.html"
-                        class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                        >Contattaci</a
-                    >
-                    <a
-                        href="about.html"
-                        class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                        >About</a
-                    >
+                    <div class="flex items-center">
+                        <a
+                            href="accesso.html"
+                            class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs"
+                            >Log-in</a
+                        >
+                        <a
+                            href="registrazione.html"
+                            class="bg-blue-600 hover:bg-blue-800 text-white font-semibold my-3 py-2 px-4 rounded sm:text-xs bg-gradient-to-r from-blue-500 to-blue-700"
+                            >Sign-in</a
+                        >
+                    </div>
                 </div>
             </div>
-            <div class="flex items-center">
-                <a
-                    href="accesso.html"
-                    class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs"
-                    >Log-in</a
+        </nav>
+
+        <div
+            class="min-h-screen flex flex-col justify-center items-center bg-gray-800 py-12"
+        >
+            <article class="group">
+                <div
+                    class="md:w-fit lg:mx-6 bg-gray-300 rounded-lg p-6 md:mb-60"
                 >
-                <a
-                    href="registrazione.html"
-                    class="bg-blue-600 hover:bg-blue-800 text-white font-semibold my-3 py-2 px-4 rounded sm:text-xs"
-                    >Sign-in</a
-                >
-            </div>
+                    <h1 class="my-6 text-5xl font-bold text-gray-900">
+                        Disco degl'anni
+                    </h1>
+                    <div class="flex justify-center">
+                        <img
+                        src="inter.jpg"
+                            alt="zzaLa"
+                            class="h-auto max-h-[36rem] w-full"
+                        />
+                    </div>
+                    <p class="mt-10 text-lg/relaxed text-gray-900">
+                        Il Football Club Internazionale Milano, meglio
+                        conosciuto come Internazionale o più semplicemente come
+                        Inter, è una società calcistica italiana con sede nella
+                        città di Milano. Fondato il 9 marzo 1908 da un gruppo di
+                        soci dissidenti del Milan, il club ha sempre militato
+                        nella massima serie del campionato nazionale a partire
+                        dalla propria prima partita ufficiale, nel 1909, ed è
+                        l'unico ad aver partecipato a tutte le edizioni della
+                        Serie A, istituita nella stagione 1929-30. Fin dalla
+                        fondazione, indossa una divisa a strisce verticali
+                        nerazzurre, a parte una breve parentesi nel 1928 quando
+                        adottò una maglia bianca rossocrociata. Nel suo palmarès
+                        annovera 35 titoli nazional: 19 scudetti, 9 Coppe Italia
+                        e 7 Supercoppe italiane, che ne fanno il secondo club
+                        più titolato alle spalle della Juventus (59). A livello
+                        internazionale vanta invece 3 Coppe dei
+                        Campioni/Champions League, 3 Coppe UEFA, 2 Coppe
+                        Intercontinentali e una Coppa del mondo per club FIFA,
+                        per un totale di 9 trofei ufficiali che pongono l'Inter
+                        dietro il Milan (18) e la Juventus (11) nella classifica
+                        dei club italiani per numero di vittorie in competizioni
+                        internazionali. Nel 1965 è diventata la prima squadra
+                        europea a vincere il campionato, la Coppa dei Campioni e
+                        la Coppa Intercontinentale nello stesso anno, detenendo
+                        quindi contemporaneamente i titoli di campione
+                        nazionale, continentale e mondiale. Il traguardo è stato
+                        bissato nel 2010, quando è diventata anche la prima e
+                        unica squadra italiana ad essersi aggiudicata le tre
+                        competizioni principali disputate nel corso della
+                        stagione: la Champions League, il campionato e la Coppa
+                        Italia; coi successivi trionfi in Supercoppa italiana e
+                        Coppa del mondo per club FIFA è diventata anche la prima
+                        e, finora, unica squadra del Paese a vincere cinque
+                        trofei nell'arco di un anno solare. Alcuni dei suoi
+                        calciatori sono stati premiati durante la militanza nel
+                        club con i massimi riconoscimenti individuali, come il
+                        Pallone d'oro e il FIFA World Player; inoltre, il club
+                        ha fornito un contributo rilevante ai successi della
+                        nazionale italiana. La squadra può contare su un
+                        sostegno numeroso sia a livello nazionale che
+                        internazionale.Nel 1998 e nel 2010 l'Inter fu nominata
+                        Squadra mondiale dell'anno dall'IFFHS; nel 2009 si
+                        piazzò al sesto posto nella lista secolare sui migliori
+                        club europei redatta dalla stessa federazione di storia
+                        e statistica, e nel 2011 al quinto posto (prima
+                        italiana) nella classifica europea delle migliori
+                        squadre del decennio 2001-2010.[8]
+                        
+                    </p>
+                </div>
+            </article>
         </div>
-    </div>
-</nav>
-
-Il Football Club Internazionale Milano, meglio conosciuto come Internazionale o più semplicemente come Inter, è una società calcistica italiana con sede nella città di Milano.
-
-Fondato il 9 marzo 1908 da un gruppo di soci dissidenti del Milan, il club ha sempre militato nella massima serie del campionato nazionale a partire dalla propria prima partita ufficiale, nel 1909, ed è l'unico ad aver partecipato a tutte le edizioni della Serie A, istituita nella stagione 1929-30. Fin dalla fondazione, indossa una divisa a strisce verticali nerazzurre, a parte una breve parentesi nel 1928 quando adottò una maglia bianca rossocrociata.
-
-Nel suo palmarès annovera 35 titoli nazional: 19 scudetti, 9 Coppe Italia e 7 Supercoppe italiane, che ne fanno il secondo club più titolato alle spalle della Juventus (59). A livello internazionale vanta invece 3 Coppe dei Campioni/Champions League, 3 Coppe UEFA, 2 Coppe Intercontinentali e una Coppa del mondo per club FIFA, per un totale di 9 trofei ufficiali che pongono l'Inter dietro il Milan (18) e la Juventus (11) nella classifica dei club italiani per numero di vittorie in competizioni internazionali. Nel 1965 è diventata la prima squadra europea a vincere il campionato, la Coppa dei Campioni e la Coppa Intercontinentale nello stesso anno, detenendo quindi contemporaneamente i titoli di campione nazionale, continentale e mondiale. Il traguardo è stato bissato nel 2010, quando è diventata anche la prima e unica squadra italiana ad essersi aggiudicata le tre competizioni principali disputate nel corso della stagione: la Champions League, il campionato e la Coppa Italia; coi successivi trionfi in Supercoppa italiana e Coppa del mondo per club FIFA è diventata anche la prima e, finora, unica squadra del Paese a vincere cinque trofei nell'arco di un anno solare.
-
-Alcuni dei suoi calciatori sono stati premiati durante la militanza nel club con i massimi riconoscimenti individuali, come il Pallone d'oro e il FIFA World Player; inoltre, il club ha fornito un contributo rilevante ai successi della nazionale italiana. La squadra può contare su un sostegno numeroso sia a livello nazionale che internazionale.Nel 1998 e nel 2010 l'Inter fu nominata Squadra mondiale dell'anno dall'IFFHS; nel 2009 si piazzò al sesto posto nella lista secolare sui migliori club europei redatta dalla stessa federazione di storia e statistica, e nel 2011 al quinto posto (prima italiana) nella classifica europea delle migliori squadre del decennio 2001-2010.[8]
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/210px-FC_Internazionale_Milano_2021.svg.png"></img>
+    </body>
+</html>

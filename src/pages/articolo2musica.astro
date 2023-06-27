@@ -1,38 +1,70 @@
-<nav class="bg-gray-400 sm:w-full lg:w-full">
-    <div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
-        <div class="flex items-center justify-between">
-            <div class="flex-auto items-center sm:mx-auto sm:w-fit">
-                <div class="relative inline-block sm:hidden">
-                    <button
-                        class="menu-btn text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                    >
-                        Menu
-                        <svg
-                            class="w-4 h-4 inline-block ml-1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <path d="M6 9l6 6 6-6"></path>
-                        </svg>
-                    </button>
-                    <div
-                        class="absolute hidden text-gray-900 bg-white mt-2 py-2 w-32 rounded-lg shadow-lg z-10"
-                        id="mobile-menu"
-                    >
-                        <a
-                            href="index.html"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >Home</a
-                        >
-                        <div class="group relative inline-block">
+---
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"
+        ></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <title>Articolo</title>
+    </head>
+
+    <body class="bg-gray-100">
+        <div
+            class="flex justify-center items-center bg-gray-800 sm:w-full md:h-full md:w-full lg:w-full"
+        >
+            <a href="index.html">
+                <img
+                    src="logo.jpeg"
+                    alt="logo del blog"
+                    class="h-40 w-56 my-6"
+                />
+            </a>
+        </div>
+
+        <div
+            class="absolute top-0 right-0 mt-4 mr-4 flex-wrap justify-end flex flex-col sm:flex-row sm:items-center"
+        >
+            <a
+                href="https://www.instagram.com/cronachediresistenzaaa/"
+                class="ml-2 sm:ml-0 mb-2 sm:mb-0"
+            >
+                <i class="fab fa-instagram text-white text-lg"></i>
+            </a>
+            <a
+                href="https://www.facebook.com/profile.php?id=100094044757182"
+                class="ml-2 sm:ml-4 mb-2 sm:mb-0"
+            >
+                <i class="fab fa-facebook text-white text-lg"></i>
+            </a>
+            <a
+                href="https://twitter.com/Alberto2040213"
+                class="ml-2 sm:ml-4 sm:mr-4 mb-2 sm:mb-0"
+            >
+                <i class="fab fa-twitter text-white text-lg"></i>
+            </a>
+        </div>
+        <nav class="bg-gray-300 sm:w-full lg:w-full">
+            <div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
+                <div class="flex items-center justify-between">
+                    <div class="flex-auto items-center sm:mx-auto sm:w-fit">
+                        <div class="relative inline-block sm:hidden">
                             <button
-                                class="submenu-btn block px-4 py-2 hover:bg-gray-100"
-                                >News
+                                class="menu-btn text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                            >
+                                Menu
                                 <svg
                                     class="w-4 h-4 inline-block ml-1"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -47,116 +79,176 @@
                                 </svg>
                             </button>
                             <div
-                                class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
-                                id="news-submenu"
+                                class="absolute hidden text-gray-900 bg-white mt-2 py-2 w-32 rounded-lg shadow-lg z-10"
+                                id="mobile-menu"
                             >
                                 <a
-                                    href="sport.html"
+                                    href="index.html"
                                     class="block px-4 py-2 hover:bg-gray-100"
-                                    >Sport</a
+                                    >Home</a
+                                >
+                                <div class="group relative inline-block">
+                                    <button
+                                        class="submenu-btn block px-4 py-2 hover:bg-gray-100"
+                                        >News
+                                        <svg
+                                            class="w-4 h-4 inline-block ml-1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path d="M6 9l6 6 6-6"></path>
+                                        </svg>
+                                    </button>
+                                    <div
+                                        class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
+                                        id="news-submenu"
+                                    >
+                                        <a
+                                            href="sport.html"
+                                            class="block px-4 py-2 hover:bg-gray-100"
+                                            >Sport</a
+                                        >
+                                        <a
+                                            href="musica.html"
+                                            class="block px-4 py-2 hover:bg-gray-100"
+                                            >Musica</a
+                                        >
+                                        <a
+                                            href="cinema.html"
+                                            class="block px-4 py-2 hover:bg-gray-100"
+                                            >Cinema</a
+                                        >
+                                    </div>
+                                </div>
+                                <a
+                                    href="contattaci.html"
+                                    class="block px-4 py-2 hover:bg-gray-100"
+                                    >Contattaci</a
                                 >
                                 <a
-                                    href="musica.html"
+                                    href="about.html"
                                     class="block px-4 py-2 hover:bg-gray-100"
-                                    >Musica</a
-                                >
-                                <a
-                                    href="cinema.html"
-                                    class="block px-4 py-2 hover:bg-gray-100"
-                                    >Cinema</a
+                                    >About</a
                                 >
                             </div>
                         </div>
-                        <a
-                            href="contattaci.html"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >Contattaci</a
-                        >
-                        <a
-                            href="about.html"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >About</a
-                        >
-                    </div>
-                </div>
-                <div class="hidden sm:flex">
-                    <a
-                        href="index.html"
-                        class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                        >Home</a
-                    >
-                    <div class="group relative inline-block">
-                        <button
-                            class="submenu-btn mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                            >News
-                            <svg
-                                class="w-4 h-4 inline-block ml-1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M6 9l6 6 6-6"></path>
-                            </svg>
-                        </button>
-                        <div
-                            class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
-                            id="news-submenu"
-                        >
+                        <div class="hidden sm:flex">
                             <a
-                                href="sport.html"
-                                class="block px-4 py-2 hover:bg-gray-100"
-                                >Sport</a
+                                href="index.html"
+                                class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                                >Home</a
+                            >
+                            <div class="group relative inline-block">
+                                <button
+                                    class="submenu-btn mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                                    >News
+                                    <svg
+                                        class="w-4 h-4 inline-block ml-1"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </button>
+                                <div
+                                    class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
+                                    id="news-submenu"
+                                >
+                                    <a
+                                        href="sport.html"
+                                        class="block px-4 py-2 hover:bg-gray-100"
+                                        >Sport</a
+                                    >
+                                    <a
+                                        href="musica.html"
+                                        class="block px-4 py-2 hover:bg-gray-100"
+                                        >Musica</a
+                                    >
+                                    <a
+                                        href="cinema.html"
+                                        class="block px-4 py-2 hover:bg-gray-100"
+                                        >Cinema</a
+                                    >
+                                </div>
+                            </div>
+                            <a
+                                href="contattaci.html"
+                                class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                                >Contattaci</a
                             >
                             <a
-                                href="musica.html"
-                                class="block px-4 py-2 hover:bg-gray-100"
-                                >Musica</a
-                            >
-                            <a
-                                href="cinema.html"
-                                class="block px-4 py-2 hover:bg-gray-100"
-                                >Cinema</a
+                                href="about.html"
+                                class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+                                >About</a
                             >
                         </div>
                     </div>
-                    <a
-                        href="contattaci.html"
-                        class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                        >Contattaci</a
-                    >
-                    <a
-                        href="about.html"
-                        class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                        >About</a
-                    >
+                    <div class="flex items-center">
+                        <a
+                            href="accesso.html"
+                            class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs"
+                            >Log-in</a
+                        >
+                        <a
+                            href="registrazione.html"
+                            class="bg-blue-600 hover:bg-blue-800 text-white font-semibold my-3 py-2 px-4 rounded sm:text-xs bg-gradient-to-r from-blue-500 to-blue-700"
+                            >Sign-in</a
+                        >
+                    </div>
                 </div>
             </div>
-            <div class="flex items-center">
-                <a
-                    href="accesso.html"
-                    class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs"
-                    >Log-in</a
+        </nav>
+
+        <div
+            class="min-h-screen flex flex-col justify-center items-center bg-gray-800 py-12"
+        >
+            <article class="group">
+                <div
+                    class="md:w-fit lg:mx-6 bg-gray-300 rounded-lg p-6 md:mb-60"
                 >
-                <a
-                    href="registrazione.html"
-                    class="bg-blue-600 hover:bg-blue-800 text-white font-semibold my-3 py-2 px-4 rounded sm:text-xs"
-                    >Sign-in</a
-                >
-            </div>
-        </div>
-    </div>
-</nav>
-
-Lazza, pseudonimo di Jacopo Lazzarini (Milano, 22 agosto 1994), è un rapper, musicista e produttore discografico italiano.
-
-L'artista è solito fare uso del linguaggio riocontra all'interno dei propri brani, ovvero invertire le sillabe delle parole per generare rime caratteristiche.
-
-Sirio è il terzo album in studio del rapper italiano Lazza, pubblicato l'8 aprile 2022 dalla Island Records e dalla 333Mob.
-L'album si compone di diciassette brani, tra cui i Ouv3rture e Molotov, che ne hanno anticipato l'uscita, e spazia tra sonorità trap e reggaeton.
-
-Annunciato il 5 marzo 2022 in un raduno organizzato da Lazza stesso, nel giorno di uscita di Ouv3rture è stato organizzato Sirio - Atto zero, evento dove sono state annunciate quattro tracce dell'album, ovvero Cinema, Alibi, Nulla di e Nessuno (rivelando inoltre la collaborazione con Geolier). Il 9 febbraio 2023 è stata pubblicata la riedizione digitale dell'album contenente l'inedito Cenere, con il quale Lazza ha partecipato al Festival di Sanremo 2023 piazzandosi al secondo posto.
-<img src="https://cloud.radiozeta.it/radio-zeta/News/Article/600x600/lazza-ecco-tutto-cia-che-sappiamo-sul-rapper-e-producer-milanese-square-site-nxhqk.jpg"></img>
+                    <h1 class="my-6 text-5xl font-bold text-gray-900">
+                        Disco degl'anni
+                    </h1>
+                    <div class="flex justify-center">
+                        <img
+                            src="lazza.png"
+                            alt="zzaLa"
+                            class="h-auto max-h-[36rem] w-full"
+                        />
+                    </div>
+                    <p class="mt-10 text-lg/relaxed text-gray-900">
+                        Lazza, pseudonimo di Jacopo Lazzarini (Milano, 22 agosto
+                        1994), è un rapper, musicista e produttore discografico
+                        italiano. L'artista è solito fare uso del linguaggio
+                        riocontra all'interno dei propri brani, ovvero invertire
+                        le sillabe delle parole per generare rime
+                        caratteristiche. Sirio è il terzo album in studio del
+                        rapper italiano Lazza, pubblicato l'8 aprile 2022 dalla
+                        Island Records e dalla 333Mob. L'album si compone di
+                        diciassette brani, tra cui i Ouv3rture e Molotov, che ne
+                        hanno anticipato l'uscita, e spazia tra sonorità trap e
+                        reggaeton. Annunciato il 5 marzo 2022 in un raduno
+                        organizzato da Lazza stesso, nel giorno di uscita di
+                        Ouv3rture è stato organizzato Sirio - Atto zero, evento
+                        dove sono state annunciate quattro tracce dell'album,
+                        ovvero Cinema, Alibi, Nulla di e Nessuno (rivelando
+                        inoltre la collaborazione con Geolier). Il 9 febbraio
+                        2023 è stata pubblicata la riedizione digitale
+                        dell'album contenente l'inedito Cenere, con il quale
+                        Lazza ha partecipato al Festival di Sanremo 2023
+                        piazzandosi al secondo posto.
+                    </p>
+                </div>
+            </article>
+        </div></body>
+</html>
