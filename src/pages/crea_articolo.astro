@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>About us</title>
+    <title>Crea articolo</title>
   </head>
   <body>
     <div
@@ -102,7 +102,7 @@
     </div>
   </div>
 </nav>
-<div class="min-h-screen flex flex-col justify-center items-center bg-gray-800 py-12"></div>
+<div class="min-h-screen flex flex-col justify-center items-center bg-gray-800 py-12">
   <div class="container mx-auto px-4 sm:px-6 sm:py-4 lg:px-8">
       <div class="flex justify-center my-8">
           <div class="bg-gray-300 shadow-md rounded-lg w-full lg:w-3/4">
@@ -177,6 +177,33 @@
 
           reader.readAsDataURL(file);
       });
+  </script>
+  <script>
+    const menuButton = document.querySelector('.menu-btn');
+    const mobileMenu = document.querySelector('#mobile-menu');
+    const submenuButtons = document.querySelectorAll('.submenu-btn');
+    const submenus = document.querySelectorAll('.submenu');
+  
+    menuButton.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+    });
+  
+    submenuButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        const submenu = this.nextElementSibling;
+        submenu.classList.toggle('hidden');
+      });
+    });
+  
+    document.addEventListener('click', function(event) {
+      const target = event.target;
+      const isMobileMenu = target.closest('#mobile-menu');
+      const isMenuButton = target.closest('.menu-btn');
+  
+      if (!isMobileMenu && !isMenuButton) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
   </script>
 </body>
 
