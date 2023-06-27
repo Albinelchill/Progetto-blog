@@ -133,7 +133,7 @@
 		  
 			  <div class="flex">
 				<!-- Filters (Desktop) -->
-				<div class="bg-gray-300 p-4 rounded mr-8 hidden md:block" id="filter-container">
+				<div class="bg-gray-300 p-4 rounded mr-8 hidden md:block sticky top-0 max-h-screen" id="filter-container">
 					<h2 class="text-xl font-semibold mb-4">Filtri</h2>
 					<div class="flex items-center mb-2">
 					  <input type="checkbox" id="topic-filter" class="mr-2">
@@ -148,6 +148,7 @@
 					  <label for="recent-filter">Più recenti</label>
 					</div>
 				  </div>
+				  
 				  
 				<div class="mb-4">
 					<article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
@@ -337,27 +338,26 @@
 				  
 				  
 				  <script>
-
-    const searchInput = document.getElementById('search-input');
-
-    // Event listener for Enter key press
-    searchInput.addEventListener('keydown', function (event) {
-      if (event.keyCode === 13) { // Enter key
-        event.preventDefault();
-        const searchTerm = searchInput.value.toLowerCase();
-        const articles = document.querySelectorAll('article');
-
-        for (const article of articles) {
-          const articleText = article.textContent.toLowerCase();
-          if (articleText.includes(searchTerm)) {
-            // Scroll to the article
-            window.scrollTo({ top: article.offsetTop, behavior: 'smooth' });
-            break;
-          }
-        }
-      }
-    });
-  </script>
+					const searchInput = document.getElementById('search-input');
+				  
+					// Event listener for Enter key press
+					searchInput.addEventListener('keydown', function (event) {
+					  if (event.keyCode === 13) { // Enter key
+						event.preventDefault();
+						const searchTerm = searchInput.value.toLowerCase();
+						const articles = document.querySelectorAll('article');
+				  
+						for (const article of articles) {
+						  const articleText = article.textContent.toLowerCase();
+						  if (articleText.includes(searchTerm)) {
+							// Scroll to the article
+							article.scrollIntoView({ behavior: 'smooth', block: 'center' });
+							break;
+						  }
+						}
+					  }
+					});
+				  </script>
 
 			  </div>
 			</div>
