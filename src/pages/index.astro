@@ -340,9 +340,8 @@
 				  <script>
 					const searchInput = document.getElementById('search-input');
 				  
-					// Event listener for Enter key press
 					searchInput.addEventListener('keydown', function (event) {
-					  if (event.keyCode === 13) { // Enter key
+					  if (event.keyCode === 13) { 
 						event.preventDefault();
 						const searchTerm = searchInput.value.toLowerCase();
 						const articles = document.querySelectorAll('article');
@@ -350,8 +349,7 @@
 						for (const article of articles) {
 						  const articleText = article.textContent.toLowerCase();
 						  if (articleText.includes(searchTerm)) {
-							// Scroll to the article
-							article.scrollIntoView({ behavior: 'smooth', block: 'center' });
+						      article.scrollIntoView({ behavior: 'smooth', block: 'center' });
 							break;
 						  }
 						}
