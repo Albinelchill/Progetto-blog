@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { app } from "../../../../firebase/server";
+import { app } from "../../../firebase/server";
 import { getAuth } from "firebase-admin/auth";
 
 export const get: APIRoute = async ({ request, cookies, redirect }) => {
@@ -34,5 +34,5 @@ export const get: APIRoute = async ({ request, cookies, redirect }) => {
     path: "/",
   });
 
-  return redirect("/index.astro");
+  return redirect("/dashboard");
 };
