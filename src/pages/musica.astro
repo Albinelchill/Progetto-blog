@@ -1,178 +1,469 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Il mio blog sportivo</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  
-  <nav class="bg-gray-400 sm:w-full lg:w-full">
-    <div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
-        <div class="flex items-center justify-between">
-            <div class="flex-auto items-center sm:mx-auto sm:w-fit">
-                <div class="relative inline-block sm:hidden">
-                    <button
-                        class="menu-btn text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                    >
-                        Menu
-                        <svg
-                            class="w-4 h-4 inline-block ml-1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <path d="M6 9l6 6 6-6"></path>
-                        </svg>
-                    </button>
-                    <div
-                        class="absolute hidden text-gray-900 bg-white mt-2 py-2 w-32 rounded-lg shadow-lg z-10"
-                        id="mobile-menu"
-                    >
-                        <a
-                            href="index.html"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >Home</a
-                        >
-                        <div class="group relative inline-block">
-                            <button
-                                class="submenu-btn block px-4 py-2 hover:bg-gray-100"
-                                >News
-                                <svg
-                                    class="w-4 h-4 inline-block ml-1"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <div
-                                class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
-                                id="news-submenu"
-                            >
-                                <a
-                                    href="sport.html"
-                                    class="block px-4 py-2 hover:bg-gray-100"
-                                    >Sport</a
-                                >
-                                <a
-                                    href="musica.html"
-                                    class="block px-4 py-2 hover:bg-gray-100"
-                                    >Musica</a
-                                >
-                                <a
-                                    href="cinema.html"
-                                    class="block px-4 py-2 hover:bg-gray-100"
-                                    >Cinema</a
-                                >
-                            </div>
-                        </div>
-                        <a
-                            href="contattaci.html"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >Contattaci</a
-                        >
-                        <a
-                            href="about.html"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >About</a
-                        >
-                    </div>
-                </div>
-                <div class="hidden sm:flex">
-                    <a
-                        href="index.html"
-                        class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                        >Home</a
-                    >
-                    <div class="group relative inline-block">
-                        <button
-                            class="submenu-btn mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                            >News
-                            <svg
-                                class="w-4 h-4 inline-block ml-1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M6 9l6 6 6-6"></path>
-                            </svg>
-                        </button>
-                        <div
-                            class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
-                            id="news-submenu"
-                        >
-                            <a
-                                href="sport.html"
-                                class="block px-4 py-2 hover:bg-gray-100"
-                                >Sport</a
-                            >
-                            <a
-                                href="musica.html"
-                                class="block px-4 py-2 hover:bg-gray-100"
-                                >Musica</a
-                            >
-                            <a
-                                href="cinema.html"
-                                class="block px-4 py-2 hover:bg-gray-100"
-                                >Cinema</a
-                            >
-                        </div>
-                    </div>
-                    <a
-                        href="contattaci.html"
-                        class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                        >Contattaci</a
-                    >
-                    <a
-                        href="about.html"
-                        class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
-                        >About</a
-                    >
-                </div>
-            </div>
-            <div class="flex items-center">
-                <a
-                    href="accesso.html"
-                    class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs"
-                    >Log-in</a
-                >
-                <a
-                    href="registrazione.html"
-                    class="bg-blue-600 hover:bg-blue-800 text-white font-semibold my-3 py-2 px-4 rounded sm:text-xs"
-                    >Sign-in</a
-                >
-            </div>
-        </div>
-    </div>
-</nav>
-<header>
-    <main>
-        <section>
-          <h2>Benvenuto nel mio blog musicale!</h2>
-          <p>Qui troverai una serie di articoli interessanti sul mondo della musica.</p>
-        </section>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="articolo1musica.html">Articolo 1</a></li>
-      <li><a href="articolo2musica.html">Articolo 2</a></li>
-    </ul>
-  </nav>
+---
+---
 
-  
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home - Blog</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+	</head>
+	<body class="bg-gray-100">
+		<div
+			class="flex justify-center items-center bg-gray-800 sm:w-full md:h-full md:w-full lg:w-full"
+		>
+			<a href="index.html">
+				<img
+					src="logo.jpeg"
+					alt="logo del blog"
+					class="h-40 w-56 my-6"
+				/>
+			</a>
+		</div>
 
-</body>
+		<div
+			class="absolute top-0 right-0 mt-4 mr-4 flex-wrap justify-end flex flex-col sm:flex-row sm:items-center"
+		>
+			<a
+				href="https://www.instagram.com/cronachediresistenzaaa/"
+				class="ml-2 sm:ml-0 mb-2 sm:mb-0"
+			>
+				<i class="fab fa-instagram text-white text-lg"></i>
+			</a>
+			<a
+				href="https://www.facebook.com/profile.php?id=100094044757182"
+				class="ml-2 sm:ml-4 mb-2 sm:mb-0"
+			>
+				<i class="fab fa-facebook text-white text-lg"></i>
+			</a>
+			<a
+				href="https://twitter.com/Alberto2040213"
+				class="ml-2 sm:ml-4 sm:mr-4 mb-2 sm:mb-0"
+			>
+				<i class="fab fa-twitter text-white text-lg"></i>
+			</a>
+		</div>
+		<nav class="bg-gray-300 sm:w-full lg:w-full">
+			<div class="container mx-auto px-4 sm:px-6 sm:py-0 lg:px-8">
+				<div class="flex items-center justify-between">
+					<div class="flex-auto items-center sm:mx-auto sm:w-fit">
+						<div class="relative inline-block sm:hidden">
+							<button
+								class="menu-btn text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+							>
+								Menu
+								<svg
+									class="w-4 h-4 inline-block ml-1"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path d="M6 9l6 6 6-6"></path>
+								</svg>
+							</button>
+							<div
+								class="absolute hidden text-gray-900 bg-white mt-2 py-2 w-32 rounded-lg shadow-lg z-10"
+								id="mobile-menu"
+							>
+								<a
+									href="index.html"
+									class="block px-4 py-2 hover:bg-gray-100"
+									>Home</a
+								>
+								<div class="group relative inline-block">
+									<button
+										class="submenu-btn block px-4 py-2 hover:bg-gray-100"
+										>News
+										<svg
+											class="w-4 h-4 inline-block ml-1"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path d="M6 9l6 6 6-6"></path>
+										</svg>
+									</button>
+									<div
+										class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
+										id="news-submenu"
+									>
+										<a
+											href="sport.html"
+											class="block px-4 py-2 hover:bg-gray-100"
+											>Sport</a
+										>
+										<a
+											href="musica.html"
+											class="block px-4 py-2 hover:bg-gray-100"
+											>Musica</a
+										>
+										<a
+											href="cinema.html"
+											class="block px-4 py-2 hover:bg-gray-100"
+											>Cinema</a
+										>
+									</div>
+								</div>
+								<a
+									href="contattaci.html"
+									class="block px-4 py-2 hover:bg-gray-100"
+									>Contattaci</a
+								>
+								<a
+									href="about.html"
+									class="block px-4 py-2 hover:bg-gray-100"
+									>About</a
+								>
+							</div>
+						</div>
+						<div class="hidden sm:flex">
+							<a
+								href="index.html"
+								class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+								>Home</a
+							>
+							<div class="group relative inline-block">
+								<button
+									class="submenu-btn mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+									>News
+									<svg
+										class="w-4 h-4 inline-block ml-1"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path d="M6 9l6 6 6-6"></path>
+									</svg>
+								</button>
+								<div
+									class="absolute hidden bg-white text-gray-900 mt-2 py-2 w-32 rounded-lg shadow-lg z-10 submenu"
+									id="news-submenu"
+								>
+									<a
+										href="sport.html"
+										class="block px-4 py-2 hover:bg-gray-100"
+										>Sport</a
+									>
+									<a
+										href="musica.html"
+										class="block px-4 py-2 hover:bg-gray-100"
+										>Musica</a
+									>
+									<a
+										href="cinema.html"
+										class="block px-4 py-2 hover:bg-gray-100"
+										>Cinema</a
+									>
+								</div>
+							</div>
+							<a
+								href="contattaci.html"
+								class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+								>Contattaci</a
+							>
+							<a
+								href="about.html"
+								class="mx-4 text-gray-900 hover:text-white font-semibold lg:text-lg sm:mx-auto sm:text-xs md:text-lg"
+								>About</a
+							>
+						</div>
+					</div>
+					<div class="flex items-center">
+						
+						<a
+							href="accesso.html"
+							class="bg-gray-500 text-white mr-4 hover:bg-gray-800 font-semibold my-3 py-2 px-4 rounded sm:text-xs"
+							>Log-in</a
+						>
+						<a
+							href="registrazione.html"
+							class="bg-blue-600 hover:bg-blue-800 text-white font-semibold my-3 py-2 px-4 rounded sm:text-xs bg-gradient-to-r from-blue-500 to-blue-700"
+							>Sign-in</a
+						>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="min-h-screen flex flex-col bg-gray-800">
+			<div class="container mx-auto py-8">
+				<!-- Search Bar -->
+				<div class="flex justify-end mb-8">
+                    <h1 class="font-bold text-white text-4xl mr-auto">
+                        "MUSICA"
+                    </h1>
+					<div class="w-full sm:w-auto mb-4 sm:mb-">
+						<input
+							type="text"
+							placeholder="Cerca..."
+							class="focus:border-blue-700 focus:ring focus:ring-blue-700 shadow-sm bg-white rounded px-4 py-2 w-full text-gray-800"
+							id="search-input"
+						/>
+					</div>
+				</div>
+
+				<div class="sm:hidden mb-4">
+					<div class="relative">
+						<select
+							class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+						>
+							<option selected disabled
+								>Seleziona un filtro</option
+							>
+							<option>Per argomento</option>
+							<option>Più valutati</option>
+							<option>Più recenti</option>
+						</select>
+						<div
+							class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+						>
+							<svg
+								class="fill-current h-4 w-4"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 20 20"
+							>
+								<path
+									d="M9.293 13.95l3.536-3.536a1 1 0 1 0-1.414-1.414L8.464 11.05a1 1 0 0 0 0 1.414l3.536 3.536a1 1 0 1 0 1.414-1.414L9.293 13.95z"
+								></path>
+							</svg>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex">
+					<!-- Filters (Desktop) -->
+					<div
+						class="bg-gray-300 p-4 rounded mr-8 hidden md:block sticky top-0 max-h-screen"
+						id="filter-container"
+					>
+						<h2 class="text-xl font-semibold mb-4">Filtri</h2>
+						<div class="flex items-center mb-2">
+							<input
+								type="checkbox"
+								id="topic-filter"
+								class="mr-2"
+							/>
+							<label for="topic-filter">Per argomento</label>
+						</div>
+						<div class="flex items-center mb-2">
+							<input
+								type="checkbox"
+								id="popular-filter"
+								class="mr-2"
+							/>
+							<label for="popular-filter">Più valutati</label>
+						</div>
+						<div class="flex items-center mb-2">
+							<input
+								type="checkbox"
+								id="recent-filter"
+								class="mr-2"
+							/>
+							<label for="recent-filter">Più recenti</label>
+						</div>
+					</div>
+                    <div class="mb-4">
+                        <article
+							class="overflow-hidden rounded-lg shadow transition hover:shadow-lg"
+						>
+							<img
+								alt="Lazza"
+								src="lazza.jpg"
+								class="h-56 w-full object-cover"
+							/>
+
+							<div class="bg-white p-4 sm:p-6">
+								<time
+									datetime="25-06-2023"
+									class="block text-xs text-gray-500"
+								>
+									25 Giu 2023
+								</time>
+
+								<a href="articolo2musica.html">
+									<h3
+										class="mt-0.5 text-lg text-gray-900 font-bold"
+									>
+										Disco degli anni
+									</h3>
+								</a>
+
+								<p class="mt-2 line-clamp-3 text-sm/relaxed">
+									Lazza, pseudonimo di Jacopo Lazzarini
+									(Milano, 22 agosto 1994), è un rapper,
+									musicista e produttore discografico
+									italiano. L'artista è solito fare uso del
+									linguaggio riocontra all'interno dei propri
+									brani, ovvero invertire le sillabe delle
+									parole per generare rime caratteristiche.
+								</p>
+								<a
+									href="articolo2musica.html"
+									class="mt-2 text-lg font-medium text-blue-700 hover:text-blue-800 underline"
+								>
+									Leggi di più
+								</a>
+							</div>
+							<br />
+                        </article>
+                        <br>
+                        <article
+									class="overflow-hidden rounded-lg shadow transition hover:shadow-lg"
+								>
+									<img
+										alt="Trapper"
+										src="central.jpg"
+										class="h-56 w-full object-cover"
+									/>
+
+									<div class="bg-white p-4 sm:p-6">
+										<time
+											datetime="1-06-2023"
+											class="block text-xs text-gray-500"
+										>
+											1 Gen 2023
+										</time>
+
+										<a href="articolo1musica.html">
+											<h3
+												class="mt-0.5 text-lg text-gray-900 font-bold"
+											>
+												Capo della drill
+											</h3>
+										</a>
+
+										<p
+											class="mt-2 line-clamp-3 text-sm/relaxed"
+										>
+											Central Cee, pseudonimo di Oakley
+											Neil H T Caesar-Su (Londra, 4 giugno
+											1998), è un rapper britannico. Il
+											suo mixtape di debutto, Wild West
+											(2021), è stato accolto
+											favorevolmente dalla critica e ha
+											debuttato alla seconda posizione
+											della Official Albums Chart. Ad esso
+											hanno fatto seguito nel 2022 il
+											secondo mixtape 23, che ha raggiunto
+											la prima posizione nel Regno Unito,
+											e i singoli di successo
+											internazionale Doja e Let Go. Nel
+											2023 ottiene anche la prima
+											posizione nella classifica dei
+											singoli con il brano Sprinter, in
+											collaborazione con il collega Dave.
+										</p>
+										<a
+											href="articolo1musica.html"
+											class="mt-2 text-lg font-medium text-blue-700 hover:text-blue-800 underline"
+											>
+											Leggi di più
+										</a>
+									</div>
+								</article>
+                                <script>
+									const searchInput =
+										document.getElementById("search-input");
+
+									searchInput.addEventListener(
+										"keydown",
+										function (event) {
+											if (event.keyCode === 13) {
+												event.preventDefault();
+												const searchTerm =
+													searchInput.value.toLowerCase();
+												const articles =
+													document.querySelectorAll(
+														"article"
+													);
+
+												for (const article of articles) {
+													const articleText =
+														article.textContent.toLowerCase();
+													if (
+														articleText.includes(
+															searchTerm
+														)
+													) {
+														article.scrollIntoView({
+															behavior: "smooth",
+															block: "center",
+														});
+														break;
+													}
+												}
+											}
+										}
+									);
+								</script>
+
+					<script
+						src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+					></script>
+					<script>
+						const menuButton = document.querySelector(".menu-btn");
+						const mobileMenu =
+							document.querySelector("#mobile-menu");
+						const submenuButtons =
+							document.querySelectorAll(".submenu-btn");
+						const submenus = document.querySelectorAll(".submenu");
+
+						menuButton.addEventListener("click", function () {
+							mobileMenu.classList.toggle("hidden");
+						});
+
+						submenuButtons.forEach(function (button) {
+							button.addEventListener("click", function () {
+								const submenu = this.nextElementSibling;
+								submenu.classList.toggle("hidden");
+							});
+						});
+
+						document.addEventListener("click", function (event) {
+							const target = event.target;
+							const isMobileMenu = target.closest("#mobile-menu");
+							const isMenuButton = target.closest(".menu-btn");
+
+							if (!isMobileMenu && !isMenuButton) {
+								mobileMenu.classList.add("hidden");
+							}
+						});
+						const filterDropdown =
+							document.getElementById("filter-dropdown");
+						const filterOptions = document.querySelector(
+							".w-full.sm\\:w-64 .hidden.sm\\:block"
+						);
+
+						filterDropdown.addEventListener("change", function () {
+							const selectedOption = filterDropdown.value;
+							filterOptions.style.display = selectedOption
+								? "block"
+								: "none";
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
+
+                    </div>
