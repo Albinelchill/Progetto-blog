@@ -15,7 +15,7 @@ export const post: APIRoute = async ({ request, redirect }) => {
   }
   try {
     const db = getFirestore(app);
-    const friendsRef = db.collection("friends");
+    const friendsRef = db.collection("./pages/api/auth/friends");
     await friendsRef.add({
       name,
       age: parseInt(age),
@@ -26,5 +26,5 @@ export const post: APIRoute = async ({ request, redirect }) => {
       status: 500,
     });
   }
-  return redirect("/dashboard");
+  return redirect("/index.html");
 };
