@@ -27,4 +27,8 @@ export const post: APIRoute = async ({ request, redirect }) => {
     });
   }
   return redirect("/index.html");
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 800dba1324e22094aacd3f71f30f2f8b743d1799
