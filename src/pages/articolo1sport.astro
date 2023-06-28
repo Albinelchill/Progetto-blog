@@ -7,6 +7,11 @@
         <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"
         ></script>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js"
+        ></script>
+        <script
+            src="https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js"
+        ></script>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
@@ -19,6 +24,23 @@
             rel="stylesheet"
         />
         <title>Articolo</title>
+        <script>
+            // Configura la tua app Firebase
+            var firebaseConfig = {
+                apiKey: "AIzaSyBr-f6q5j6y2-nuuJ4M29OcVjZCQmS2GJA",
+                authDomain: "blog-3a194.firebaseapp.com",
+                projectId: "blog-3a194",
+                storageBucket: "blog-3a194.appspot.com",
+                messagingSenderId: "408317893326",
+                appId: "1:408317893326:web:47269223e7148ce3840e9f",
+            };
+
+            // Inizializza l'app Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            // Riferimento al nodo "comments" nel database Firebase
+            var commentsRef = firebase.database().ref("comments");
+        </script>
     </head>
 
     <body class="bg-gray-100">
@@ -222,7 +244,8 @@
                     <div class="flex justify-center">
                         <img
                             src="Milan.jpg"
-                            class="h-auto max-h-[36rem] w-full" />
+                            class="h-auto max-h-[36rem] w-full"
+                        />
                     </div>
                     <p class="mt-10 text-lg/relaxed text-gray-900">
                         L'Associazione Calcio Milan, meglio nota come AC Milan,
@@ -271,6 +294,85 @@
                     </p>
                 </div>
             </article>
-        </div>
+              <div
+                id="comments-section"
+                class="w-screen mx-6 bg-gray-300 rounded-lg p-6 md:mb-10 mt-0 mb-2"
+            >
+                <form>
+                    <label for="name" class="mb-2 block">Nome:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        class="w-full mb-4 p-2 border rounded"
+                        required
+                    />
+                    <label for="comment" class="mb-2 block"
+                        >Commento:</label
+                    >
+                    <textarea
+                        id="comment"
+                        rows="4"
+                        class="w-full mb-4 p-2 border rounded"
+                        required></textarea>
+                    <button
+                        type="submit"
+                        class="bg-blue-700 text-white py-2 px-4 rounded"
+                        >Invia</button
+                    >
+                </form>
+               </div>
+            </div>
+
+        <script>
+            // Funzione per caricare i commenti dal database Firebase
+            function loadComments() {
+                commentsRef.on("value", function (snapshot) {
+                    var comments = snapshot.val();
+                    if (comments) {
+                        var commentsSection =
+                            document.getElementById("comments-section");
+                        commentsSection.innerHTML = ""; // Pulisci l'area dei commenti
+
+                        // Aggiungi i commenti al DOM
+                        for (var key in comments) {
+                            if (comments.hasOwnProperty(key)) {
+                                var comment = comments[key];
+                                var newComment = document.createElement("div");
+                                newComment.innerHTML =
+                                    "<strong>" +
+                                    comment.name +
+                                    "</strong>: " +
+                                    comment.comment;
+                                commentsSection.appendChild(newComment);
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Carica i commenti dal database Firebase al caricamento della pagina
+            window.addEventListener("load", function () {
+                loadComments();
+            });
+
+            // Gestore dell'evento di invio del commento
+            document
+                .querySelector("form")
+                .addEventListener("submit", function (event) {
+                    event.preventDefault(); // Previeni il comportamento predefinito di aggiornamento della pagina
+
+                    var name = document.getElementById("name").value;
+                    var comment = document.getElementById("comment").value;
+
+                    // Salva il nuovo commento nel database Firebase
+                    commentsRef.push({
+                        name: name,
+                        comment: comment,
+                    });
+
+                    document.getElementById("name").value = "";
+                    document.getElementById("comment").value = "";
+                });
+        </script>
     </body>
 </html>
