@@ -34,9 +34,5 @@ export const get: APIRoute = async ({ request, cookies, redirect }) => {
     path: "/",
   });
 
-<<<<<<< HEAD:src/pages/api/auth/friends/signin.ts
   return redirect("/index.html");
-=======
-  return redirect("/dashboard");
->>>>>>> 800dba1324e22094aacd3f71f30f2f8b743d1799:src/pages/api/auth/signin.ts
 };
