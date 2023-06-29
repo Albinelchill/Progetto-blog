@@ -1,8 +1,8 @@
-import type { APIRoute } from "astro";
+
 import { getAuth } from "firebase-admin/auth";
 import { app } from "../../../firebase/server";
 
-export const post: APIRoute = async ({ request, redirect }) => {
+export const post = async ({ request, redirect }) => {
   const auth = getAuth(app);
 
   /* Get form data */

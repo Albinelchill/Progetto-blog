@@ -1,8 +1,8 @@
-import type { APIRoute } from "astro";
+
 import { app } from "../../../../firebase/server";
 import { getFirestore } from "firebase-admin/firestore";
 
-export const post: APIRoute = async ({ request, redirect }) => {
+export const post = async ({ request, redirect }) => {
   const formData = await request.formData();
   const name = formData.get("name")?.toString();
   const age = formData.get("age")?.toString();
